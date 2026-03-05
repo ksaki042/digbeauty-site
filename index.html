@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGBEAUTY — 美を、掘り当てろ。</title>
+  <meta name="description" content="大手メディアが取り上げない「隠れた名品」を、成分解析×深掘りレビューで紹介する美容アーカイブメディア。">
+
+  <!-- Favicon / Touch Icons -->
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2D6A4F">
+
+  <!-- OGP -->
+  <meta property="og:title" content="DIGBEAUTY — 美を、掘り当てろ。">
+  <meta property="og:description" content="大手メディアが取り上げない「隠れた名品」を、成分解析×深掘りレビューで紹介。">
+  <meta property="og:url" content="https://beauty.plucksworld.com/">
+  <meta property="og:image" content="https://beauty.plucksworld.com/assets/ogp-top.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DIGBEAUTY">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@digbeauty">
+
+  <!-- Google Search Console verification (placeholder) -->
+  <!-- <meta name="google-site-verification" content="XXXXXXXXXX"> -->
+
+  <!-- GA4 (placeholder — 測定ID差し替え) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    /* =============================================
+       DIGBEAUTY — Design System
+       Color: Clean white + forest green accent
+       Font:  Cormorant Garamond (display) +
+              Noto Sans JP (body) +
+              JetBrains Mono (labels)
+       ============================================= */
+
+    :root {
+      --bg: #FAFAF8;
+      --bg-card: #FFFFFF;
+      --text: #1A1A1A;
+      --text-mid: #4A4A4A;
+      --text-sub: #6B6B6B;
+      --text-faint: #9A9A9A;
+      --accent: #2D6A4F;
+      --accent-light: #D8F3DC;
+      --accent-dark: #1B4332;
+      --accent-mid: #40916C;
+      --border: #E8E6E1;
+      --border-light: #F0EDE8;
+      --tag-bg: #F0EDE8;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+      --mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --max-w: 1080px;
+      --radius: 6px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
+      --shadow-lg: 0 16px 40px rgba(0,0,0,0.08);
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      font-family: var(--sans);
+      font-weight: 300;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes lineExpand {
+      from { width: 0; }
+      to   { width: 48px; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes subtlePulse {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 0.55; }
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 250, 248, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.08em;
+      transition: opacity var(--transition);
+    }
+    .logo:hover { opacity: 0.7; }
+    .logo span { color: var(--accent); }
+
+    /* Mobile hamburger */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      position: relative;
+      z-index: 110;
+    }
+    .nav-toggle span,
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background: var(--text);
+      transition: all 0.3s;
+      position: absolute;
+      left: 4px;
+    }
+    .nav-toggle span { top: 13px; }
+    .nav-toggle span::before { content: ''; top: -6px; }
+    .nav-toggle span::after { content: ''; top: 6px; }
+    .nav-toggle.active span { background: transparent; }
+    .nav-toggle.active span::before { top: 0; transform: rotate(45deg); }
+    .nav-toggle.active span::after { top: 0; transform: rotate(-45deg); }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    nav a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--text-sub);
+      padding: 6px 12px;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+      transition: color var(--transition), background var(--transition);
+    }
+    nav a:hover {
+      color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 72px 24px 48px;
+      text-align: center;
+      animation: fadeUp 0.8s ease-out both;
+    }
+    .hero-badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 5px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .hero-tagline {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: var(--text);
+    }
+    .hero-tagline em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-sub {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      font-weight: 300;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.9;
+    }
+    .hero-line {
+      display: block;
+      margin: 32px auto 0;
+      height: 2px;
+      background: var(--accent);
+      animation: lineExpand 0.6s 0.4s ease-out both;
+    }
+
+    /* ===== CATEGORY PILLS ===== */
+    .cat-row {
+      max-width: var(--max-w);
+      margin: 0 auto 40px;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      animation: fadeIn 0.6s 0.3s ease-out both;
+    }
+    .cat-pill {
+      font-size: 0.72rem;
+      font-weight: 400;
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--text-sub);
+      background: var(--bg-card);
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .cat-pill:hover,
+    .cat-pill.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* ===== ARTICLE GRID ===== */
+    .grid-section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .article-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+      animation: fadeUp 0.6s ease-out both;
+    }
+    .article-card:nth-child(1) { animation-delay: 0.08s; }
+    .article-card:nth-child(2) { animation-delay: 0.16s; }
+    .article-card:nth-child(3) { animation-delay: 0.24s; }
+    .article-card:nth-child(4) { animation-delay: 0.32s; }
+    .article-card:nth-child(5) { animation-delay: 0.40s; }
+    .article-card:nth-child(6) { animation-delay: 0.48s; }
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 50%, #e8e3dc 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(250,250,248,0.3) 100%);
+    }
+    .card-thumb-num {
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      animation: subtlePulse 4s ease-in-out infinite;
+    }
+    .card-body {
+      padding: 18px 20px 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-cat {
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .card-excerpt {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      line-height: 1.75;
+      flex: 1;
+    }
+    .card-meta {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.7rem;
+      color: var(--text-faint);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-read-more {
+      color: var(--accent);
+      font-weight: 400;
+      transition: opacity var(--transition);
+    }
+    .article-card:hover .card-read-more { opacity: 0.7; }
+
+    /* ===== ABOUT ===== */
+    .about-section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+      border-top: 1px solid var(--border);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-top: 36px;
+    }
+    .about-item {
+      padding: 28px 24px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      transition: box-shadow var(--transition);
+    }
+    .about-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .about-icon {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .about-item h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .about-item p {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      line-height: 1.8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+    }
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      letter-spacing: 0.06em;
+    }
+    .footer-links {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 0.72rem;
+      color: var(--text-faint);
+      transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-copy {
+      font-size: 0.68rem;
+      color: var(--text-faint);
+      margin-top: 12px;
+      opacity: 0.7;
+    }
+
+    /* ===== RESPONSIVE ===== */
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .header-inner { padding: 12px 16px; }
+      .logo { font-size: 1.2rem; }
+
+      /* Hamburger visible */
+      .nav-toggle { display: block; }
+      nav {
+        position: fixed;
+        top: 0; right: 0;
+        width: 260px;
+        height: 100vh;
+        background: var(--bg);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 72px 24px 24px;
+        gap: 0;
+        transform: translateX(100%);
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -4px 0 24px rgba(0,0,0,0.06);
+        z-index: 105;
+      }
+      nav.open { transform: translateX(0); }
+      nav a {
+        font-size: 0.9rem;
+        padding: 14px 8px;
+        width: 100%;
+        border-bottom: 1px solid var(--border-light);
+        border-radius: 0;
+      }
+      .nav-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.2);
+        z-index: 104;
+      }
+      .nav-overlay.show { display: block; }
+
+      .hero { padding: 40px 16px 32px; }
+      .hero-sub { font-size: 0.82rem; }
+      .cat-row { padding: 0 16px; margin-bottom: 28px; gap: 6px; }
+      .cat-pill { font-size: 0.68rem; padding: 5px 12px; }
+      .grid-section { padding: 0 16px 48px; }
+      .article-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      /* Mobile: horizontal card layout */
+      .article-card {
+        flex-direction: row;
+      }
+      .card-thumb {
+        aspect-ratio: 1 / 1;
+        width: 110px;
+        min-width: 110px;
+        flex-shrink: 0;
+      }
+      .card-thumb-num { font-size: 1.6rem; }
+      .card-body { padding: 14px 16px; }
+      .card-title { font-size: 0.88rem; }
+      .card-excerpt { display: none; }
+
+      .about-section { padding: 40px 16px 48px; }
+      .about-grid { grid-template-columns: 1fr; gap: 14px; }
+      .about-item { padding: 20px; }
+
+      footer { padding: 28px 16px; }
+    }
+
+    /* Very small screens */
+    @media (max-width: 374px) {
+      .card-thumb { width: 88px; min-width: 88px; }
+      .card-body { padding: 10px 12px; }
+      .card-title { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">DIG<span>BEAUTY</span></a>
+      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()">
+        <span></span>
+      </button>
+      <div class="nav-overlay" onclick="toggleNav()"></div>
+      <nav id="mainNav">
+        <a href="#articles">記事一覧</a>
+        <a href="#about">DIGBEAUTYとは</a>
+        <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-badge">Beauty Archive Media</span>
+    <h1 class="hero-tagline">美を、<em>掘り当てろ。</em></h1>
+    <p class="hero-sub">
+      大手メディアが取り上げない「隠れた名品」を、<br>
+      成分解析×深掘りレビューで紹介する美容アーカイブメディア。
+    </p>
+    <span class="hero-line"></span>
+  </section>
+
+  <!-- CATEGORY PILLS -->
+  <div class="cat-row">
+    <a class="cat-pill active" href="#">すべて</a>
+    <a class="cat-pill" href="#">発掘レビュー</a>
+    <a class="cat-pill" href="#">成分辞典</a>
+    <a class="cat-pill" href="#">メンズ美容</a>
+    <a class="cat-pill" href="#">ライフスタイル</a>
+    <a class="cat-pill" href="#">コラム</a>
+    <a class="cat-pill" href="#">入門ガイド</a>
+  </div>
+
+  <!-- ARTICLES -->
+  <section class="grid-section" id="articles">
+    <p class="section-label">— Latest Articles</p>
+    <div class="article-grid">
+
+      <a class="article-card" href="/articles/moisturizer-under-1000yen.html">
+        <div class="card-thumb">
+          <span class="card-thumb-num">01</span>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">発掘レビュー</span>
+          <h2 class="card-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</h2>
+          <p class="card-excerpt">セラミド、ヘパリン類似物質、アミノ酸…。価格ではなく処方で選んだ5本を成分解析付きで紹介。</p>
+          <div class="card-meta">
+            <span>2026.03.05</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="/articles/retinol-guide.html">
+        <div class="card-thumb">
+          <span class="card-thumb-num">02</span>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">成分辞典</span>
+          <h2 class="card-title">レチノール入門 — 濃度・種類・選び方を論文ベースで完全解説</h2>
+          <p class="card-excerpt">レチノール、レチナール、トレチノイン。種類ごとの違いと選び方を、エビデンスベースで解説。</p>
+          <div class="card-meta">
+            <span>2026.03.05</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="/articles/sunscreen-ingredients.html">
+        <div class="card-thumb">
+          <span class="card-thumb-num">03</span>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">成分辞典</span>
+          <h2 class="card-title">日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤</h2>
+          <p class="card-excerpt">SPF・PA表示だけで日焼け止めを選んでいませんか？ 成分の仕組みから最適な一本を見極める方法。</p>
+          <div class="card-meta">
+            <span>2026.03.05</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="/articles/mens-skincare-beginner.html">
+        <div class="card-thumb">
+          <span class="card-thumb-num">04</span>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">メンズ美容</span>
+          <h2 class="card-title">メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ</h2>
+          <p class="card-excerpt">スキンケアを始めたいメンズへ。最低限の3ステップと、成分で選ぶ最初の1本を提案。</p>
+          <div class="card-meta">
+            <span>2026.03.05</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="/articles/sauna-skin-science.html">
+        <div class="card-thumb">
+          <span class="card-thumb-num">05</span>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">ライフスタイル</span>
+          <h2 class="card-title">サウナ×美肌の科学 — HSP・血流・自律神経から読み解く</h2>
+          <p class="card-excerpt">「サウナで肌がきれいになる」は本当か？ ヒートショックプロテインと美肌の関係を科学的に読み解く。</p>
+          <div class="card-meta">
+            <span>2026.03.05</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="/articles/hall-of-fame-items.html">
+        <div class="card-thumb">
+          <span class="card-thumb-num">06</span>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">発掘レビュー</span>
+          <h2 class="card-title">美容のプロが自腹で買い続ける「殿堂入りアイテム」10選</h2>
+          <p class="card-excerpt">案件ではなく自腹。リピートし続ける理由を、成分と使用感の両面から深掘りする。</p>
+          <div class="card-meta">
+            <span>2026.03.05</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <p class="section-label">— What is DIGBEAUTY?</p>
+    <div class="about-grid">
+      <div class="about-item">
+        <span class="about-icon">🧪</span>
+        <h3>Ingredients First</h3>
+        <p>感覚やブランドイメージではなく、成分表示をベースに評価。全成分リストを読み解き、処方の設計意図まで掘り下げます。</p>
+      </div>
+      <div class="about-item">
+        <span class="about-icon">💎</span>
+        <h3>Hidden Gems</h3>
+        <p>広告ランキング常連ではなく、処方で光る「隠れた名品」を発掘。ドラッグストアからデパコスまで、価格帯にとらわれず紹介。</p>
+      </div>
+      <div class="about-item">
+        <span class="about-icon">🛡️</span>
+        <h3>No Sponsored</h3>
+        <p>広告案件による記事は一切ありません。すべてのレビューは自腹購入×独自評価。信頼性を最優先します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">DIGBEAUTY — 美を、掘り当てろ。</div>
+    <div class="footer-links">
+      <a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a>
+      <a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a>
+      <a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a>
+      <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
+    </div>
+    <p class="footer-copy">© 2026 plucks world</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mainNav').classList.toggle('open');
+      document.querySelector('.nav-toggle').classList.toggle('active');
+      document.querySelector('.nav-overlay').classList.toggle('show');
+    }
+    // Close nav on link click (mobile)
+    document.querySelectorAll('#mainNav a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        if (window.innerWidth <= 600) toggleNav();
+      });
+    });
+  </script>
+
+</body>
+</html>
