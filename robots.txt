@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://beauty.plucksworld.com/sitemap.xml
+Sitemap: https://digbeauty.plucksworld.com/sitemap.xml
