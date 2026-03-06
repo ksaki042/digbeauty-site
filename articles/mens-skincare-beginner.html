@@ -5,655 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ | DIGBEAUTY</title>
   <meta name="description" content="スキンケアを始めたいメンズへ。洗顔・化粧水・日焼け止めの3ステップと、成分で選ぶおすすめアイテムを初心者向けに解説。">
-
-  <!-- Favicon / Touch Icons -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#2D6A4F">
-
-  <!-- OGP -->
+  <meta name="theme-color" content="#3D5A47">
   <meta property="og:title" content="メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ">
   <meta property="og:description" content="スキンケアを始めたいメンズへ。洗顔・化粧水・日焼け止めの3ステップと、成分で選ぶおすすめアイテムを初心者向けに解説。">
-  <meta property="og:url" content="https://beauty.plucksworld.com/articles/mens-skincare-beginner.html">
-  <meta property="og:image" content="https://beauty.plucksworld.com/assets/ogp-mens-skincare-beginner.png">
+  <meta property="og:url" content="https://digbeauty.plucksworld.com/articles/mens-skincare-beginner.html">
+  <meta property="og:image" content="https://digbeauty.plucksworld.com/assets/ogp-mens-skincare-beginner.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="DIGBEAUTY">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@digbeauty">
-
-  <!-- Google Search Console verification (placeholder) -->
-  <!-- <meta name="google-site-verification" content="XXXXXXXXXX"> -->
-
-  <!-- GA4 (placeholder — 測定ID差し替え) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
-
-  <!-- Fonts -->
+  <!-- GA4 placeholder -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Noto+Serif+JP:wght@200;300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 
   <style>
-    /* =============================================
-       DIGBEAUTY — Article Template CSS
-       ============================================= */
-
     :root {
-      --bg: #FAFAF8;
-      --bg-card: #FFFFFF;
-      --text: #1A1A1A;
-      --text-mid: #4A4A4A;
-      --text-sub: #6B6B6B;
-      --text-faint: #9A9A9A;
-      --accent: #2D6A4F;
-      --accent-light: #D8F3DC;
-      --accent-dark: #1B4332;
-      --accent-mid: #40916C;
-      --border: #E8E6E1;
-      --border-light: #F0EDE8;
-      --tag-bg: #F0EDE8;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
-      --mono: 'JetBrains Mono', 'SF Mono', monospace;
-      --article-w: 700px;
-      --radius: 6px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
-      --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
-      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --ivory:#F7F5F1;--cream:#F0EDE7;--sand:#E4DFD7;--warm-bg:#EDE8E0;--white:#FDFCFA;
+      --ink:#1C1C1C;--ink-soft:#3A3A3A;--ink-muted:#6B6864;--ink-faint:#A8A29E;
+      --sage:#3D5A47;--sage-muted:#5A7A62;--sage-light:#C8D5C0;--sage-wash:#E8EFE6;
+      --gold:#9A8460;--gold-light:#D4C8B0;
+      --line:#DDD8D0;--line-light:#EAE6DF;
+      --display:'Playfair Display',Georgia,serif;
+      --serif-jp:'Noto Serif JP','Yu Mincho',serif;
+      --sans:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+      --serif-en:'Source Serif 4',Georgia,serif;
+      --article-w:680px;
+      --ease:cubic-bezier(.25,.1,.25,1);
+      --ease-out:cubic-bezier(0,0,.2,1);
     }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{font-size:16px;scroll-behavior:smooth}
+    body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--ivory);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:10000;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");background-size:512px}
+    img{max-width:100%;height:auto;display:block}a{color:inherit}
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-size: 16px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    body {
-      font-family: var(--sans);
-      font-weight: 300;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.9;
-      letter-spacing: 0.02em;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; }
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{animation:fadeUp .8s var(--ease-out) both}.reveal-d1{animation-delay:.12s}.reveal-d2{animation-delay:.24s}.reveal-d3{animation-delay:.36s}
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    /* HEADER */
+    .header{position:sticky;top:0;z-index:200;background:rgba(247,245,241,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    .header-inner{max-width:1120px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line-light)}
+    .logo{font-family:var(--display);font-size:1.15rem;font-weight:500;letter-spacing:.18em;color:var(--ink);text-decoration:none;transition:opacity .3s}.logo:hover{opacity:.6}
+    nav{display:flex;gap:6px;align-items:center}nav a{font-size:.73rem;font-weight:400;letter-spacing:.05em;color:var(--ink-muted);text-decoration:none;padding:8px 14px;border-radius:100px;transition:all .3s var(--ease)}nav a:hover{color:var(--sage);background:var(--sage-wash)}
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;width:32px;height:32px;position:relative;z-index:210}.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{display:block;width:18px;height:1px;background:var(--ink);transition:all .35s var(--ease);position:absolute;left:7px}.nav-toggle span{top:15px}.nav-toggle span::before{content:'';top:-7px}.nav-toggle span::after{content:'';top:7px}.nav-toggle.active span{background:transparent}.nav-toggle.active span::before{top:0;transform:rotate(45deg)}.nav-toggle.active span::after{top:0;transform:rotate(-45deg)}
+    .nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.15);z-index:199;backdrop-filter:blur(3px)}.nav-overlay.show{display:block}
 
-    /* ===== HEADER ===== */
-    .site-header {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(250,250,248,0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-light);
-    }
-    .header-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      font-family: var(--serif);
-      font-size: 1.45rem;
-      font-weight: 600;
-      color: var(--text);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      transition: opacity var(--transition);
-    }
-    .logo:hover { opacity: 0.7; }
-    .logo span { color: var(--accent); }
+    /* ARTICLE HEADER */
+    .article-header{max-width:var(--article-w);margin:0 auto;padding:56px 24px 0}
+    .breadcrumb{font-size:.7rem;color:var(--ink-faint);margin-bottom:24px}.breadcrumb a{color:var(--ink-muted);text-decoration:none;transition:color .3s}.breadcrumb a:hover{color:var(--sage)}.breadcrumb .sep{margin:0 6px;color:var(--line)}
+    .article-cat{display:inline-block;font-size:.62rem;font-weight:500;letter-spacing:.1em;color:var(--sage);background:var(--sage-wash);padding:4px 14px;border-radius:100px;margin-bottom:16px}
+    .article-title{font-family:var(--serif-jp);font-size:clamp(1.35rem,3.8vw,1.75rem);font-weight:500;line-height:1.6;letter-spacing:.02em;margin-bottom:20px}
+    .article-meta{font-size:.7rem;color:var(--ink-faint);display:flex;gap:16px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid var(--line)}
 
-    .nav-toggle {
-      display: none;
-      background: none; border: none; cursor: pointer;
-      width: 28px; height: 28px; position: relative; z-index: 110;
-    }
-    .nav-toggle span,
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-      display: block; width: 20px; height: 1.5px;
-      background: var(--text); transition: all 0.3s;
-      position: absolute; left: 4px;
-    }
-    .nav-toggle span { top: 13px; }
-    .nav-toggle span::before { content: ''; top: -6px; }
-    .nav-toggle span::after { content: ''; top: 6px; }
-    .nav-toggle.active span { background: transparent; }
-    .nav-toggle.active span::before { top: 0; transform: rotate(45deg); }
-    .nav-toggle.active span::after { top: 0; transform: rotate(-45deg); }
+    /* Hero image */
+    .article-hero{max-width:var(--article-w);margin:32px auto 0;padding:0 24px}
+    .hero-placeholder{width:100%;aspect-ratio:16/9;background:linear-gradient(145deg,#DDD4CA 0%,#D0C4B8 40%,#C8D5C0 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.1rem;font-style:italic;color:rgba(255,255,255,.5)}
 
-    nav { display: flex; align-items: center; gap: 4px; }
-    nav a {
-      font-size: 0.78rem; font-weight: 400; color: var(--text-sub);
-      text-decoration: none; padding: 6px 12px; border-radius: 4px;
-      letter-spacing: 0.04em; transition: color var(--transition), background var(--transition);
-    }
-    nav a:hover { color: var(--accent); background: var(--accent-light); }
+    /* TOC */
+    .toc{max-width:var(--article-w);margin:32px auto 0;padding:0 24px}
+    .toc-box{background:var(--white);border:1px solid var(--line-light);border-radius:8px;padding:24px 28px}
+    .toc-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px}
+    .toc-list{list-style:none;counter-reset:toc}.toc-list li{counter-increment:toc;margin-bottom:5px}.toc-list li a{font-size:.82rem;color:var(--ink-soft);text-decoration:none;display:flex;align-items:baseline;gap:10px;padding:4px 0;transition:color .3s}.toc-list li a::before{content:counter(toc,decimal-leading-zero);font-family:var(--display);font-style:italic;font-size:.72rem;color:var(--ink-faint);min-width:22px}.toc-list li a:hover{color:var(--sage)}
 
-    /* ===== ARTICLE HEADER ===== */
-    .article-header {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 48px 24px 0;
-      animation: fadeUp 0.7s ease-out both;
-    }
-    .breadcrumb {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      margin-bottom: 20px;
-    }
-    .breadcrumb a {
-      color: var(--text-sub);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-    .breadcrumb a:hover { color: var(--accent); }
-    .breadcrumb .sep { margin: 0 6px; color: var(--border); }
-    .article-cat-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 4px 14px;
-      border-radius: 100px;
-      letter-spacing: 0.06em;
-      margin-bottom: 14px;
-    }
-    .article-title {
-      font-size: clamp(1.35rem, 4vw, 1.85rem);
-      font-weight: 700;
-      line-height: 1.5;
-      letter-spacing: 0.01em;
-      margin-bottom: 16px;
-    }
-    .article-meta {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-    }
+    /* ARTICLE BODY */
+    .article-body{max-width:var(--article-w);margin:0 auto;padding:40px 24px 72px}
+    .article-body h2{font-family:var(--serif-jp);font-size:1.15rem;font-weight:500;margin:56px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line);line-height:1.6;letter-spacing:.02em}.article-body h2:first-child{margin-top:0}
+    .article-body h3{font-size:1rem;font-weight:500;margin:40px 0 14px;display:flex;align-items:center;gap:10px;line-height:1.5}
+    .article-body h3 .num{font-family:var(--display);font-size:.78rem;font-style:italic;color:var(--sage);background:var(--sage-wash);padding:2px 10px;border-radius:100px}
+    .article-body p{margin-bottom:22px;font-size:.9rem;line-height:2}.article-body strong{font-weight:500;color:var(--ink)}
 
-    /* Hero image area */
-    .article-hero {
-      max-width: var(--article-w);
-      margin: 28px auto 0;
-      padding: 0 24px;
-      animation: fadeUp 0.7s 0.12s ease-out both;
-    }
-    .article-hero .hero-placeholder {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 50%, #e8e3dc 100%);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--accent);
-      opacity: 0.45;
-    }
+    /* Callout */
+    .callout{background:var(--sage-wash);border-radius:8px;padding:20px 24px;margin:24px 0 28px;font-size:.85rem;line-height:1.9;position:relative}.callout::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--sage);border-radius:3px 0 0 3px}
+    .callout-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
 
-    /* ===== TOC ===== */
-    .toc {
-      max-width: var(--article-w);
-      margin: 32px auto 0;
-      padding: 0 24px;
-      animation: fadeUp 0.7s 0.2s ease-out both;
-    }
-    .toc-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-    }
-    .toc-title {
-      font-size: 0.72rem;
-      font-family: var(--mono);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    .toc-list {
-      list-style: none;
-      counter-reset: toc;
-    }
-    .toc-list li {
-      counter-increment: toc;
-      margin-bottom: 6px;
-    }
-    .toc-list li a {
-      font-size: 0.82rem;
-      color: var(--text-mid);
-      text-decoration: none;
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      transition: color var(--transition);
-    }
-    .toc-list li a::before {
-      content: counter(toc, decimal-leading-zero);
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      color: var(--text-faint);
-      min-width: 20px;
-    }
-    .toc-list li a:hover { color: var(--accent); }
+    /* PRODUCT CARD */
+    .product-card{background:var(--white);border:1px solid var(--line-light);border-radius:8px;margin:18px 0 40px;overflow:hidden;transition:box-shadow .3s var(--ease)}.product-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.04)}
+    .product-header{background:linear-gradient(135deg,var(--gold-light) 0%,var(--warm-bg) 100%);padding:22px 28px 18px;position:relative}.product-header::after{content:'';position:absolute;bottom:0;left:28px;right:28px;height:1px;background:rgba(0,0,0,.05)}
+    .product-name{font-family:var(--serif-jp);font-size:1rem;font-weight:500;margin-bottom:2px}.product-brand{font-size:.75rem;color:var(--ink-muted)}
+    .product-body{padding:22px 28px 28px}
+    .product-price{display:inline-block;font-family:var(--serif-en);font-size:.82rem;font-weight:400;color:var(--sage);background:var(--sage-wash);padding:4px 14px;border-radius:100px;margin-bottom:18px}
+    .ingredient-box{background:var(--warm-bg);border-radius:6px;padding:16px 20px;margin:0 0 18px;font-size:.82rem;line-height:1.8}.ingredient-box .label{font-family:var(--serif-en);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+    .product-desc{font-size:.87rem;line-height:1.95;margin-bottom:18px}
+    .ratings{margin-bottom:18px}.rating-row{display:flex;align-items:center;gap:10px;font-size:.73rem;color:var(--ink-muted);margin-bottom:6px}.rating-label{min-width:60px;text-align:right}.rating-bar{flex:1;height:4px;background:var(--line-light);border-radius:2px;overflow:hidden;max-width:140px}.rating-bar-fill{height:100%;background:linear-gradient(90deg,var(--sage-light),var(--sage));border-radius:2px}.rating-score{font-family:var(--serif-en);font-size:.7rem;min-width:42px;color:var(--ink-muted)}
+    .buy-section{padding-top:16px;border-top:1px solid var(--line-light)}.buy-title{font-family:var(--serif-en);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}.buy-links{display:flex;gap:8px;flex-wrap:wrap}.buy-link{font-size:.7rem;padding:5px 14px;border:1px solid var(--sage);border-radius:100px;color:var(--sage);text-decoration:none;transition:all .3s var(--ease)}.buy-link:hover{background:var(--sage);color:#fff}
 
-    /* ===== ARTICLE BODY ===== */
-    .article-body {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 36px 24px 64px;
-      animation: fadeUp 0.7s 0.28s ease-out both;
-    }
-    .article-body h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin: 48px 0 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--accent-light);
-      line-height: 1.55;
-    }
-    .article-body h2:first-child { margin-top: 0; }
-    .article-body h3 {
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin: 36px 0 12px;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .article-body h3 .num {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-    .article-body p {
-      margin-bottom: 20px;
-      font-size: 0.92rem;
-    }
-    .article-body strong {
-      font-weight: 500;
-      color: var(--text);
-    }
+    /* SHARE */
+    .share-bar{max-width:var(--article-w);margin:0 auto;padding:0 24px 48px;text-align:center}.share-bar p{font-size:.7rem;color:var(--ink-faint);margin-bottom:12px}.share-buttons{display:flex;gap:10px;justify-content:center}.share-btn{font-size:.7rem;padding:8px 22px;border:1px solid var(--line);border-radius:100px;color:var(--ink-muted);text-decoration:none;transition:all .3s var(--ease)}.share-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 
-    /* Callout / Note */
-    .callout {
-      background: var(--accent-light);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 16px 20px;
-      margin: 20px 0 24px;
-      font-size: 0.85rem;
-      line-height: 1.8;
-    }
-    .callout .callout-label {
-      font-weight: 500;
-      font-size: 0.72rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      margin-bottom: 4px;
-    }
+    /* RELATED */
+    .related-section{max-width:var(--article-w);margin:0 auto;padding:0 24px 80px}
+    .related-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:16px}
+    .related-list{display:flex;flex-direction:column;gap:10px}.related-link{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--white);border:1px solid var(--line-light);border-radius:8px;text-decoration:none;color:inherit;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}.related-link:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(0,0,0,.04)}
+    .related-num{font-family:var(--display);font-size:1.2rem;font-style:italic;color:var(--ink-faint);min-width:30px;text-align:center}.related-cat{font-size:.6rem;color:var(--sage);letter-spacing:.06em}.related-title{font-size:.85rem;font-weight:400;line-height:1.55}
 
-    /* ===== PRODUCT CARD ===== */
-    .product-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      margin: 16px 0 36px;
-      overflow: hidden;
-    }
-    .product-card-header {
-      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 100%);
-      padding: 20px 24px 16px;
-    }
-    .product-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-    .product-brand {
-      font-size: 0.78rem;
-      color: var(--text-sub);
-    }
-    .product-card-body {
-      padding: 20px 24px 24px;
-    }
-    .product-price {
-      display: inline-block;
-      font-family: var(--mono);
-      font-size: 0.82rem;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 3px 12px;
-      border-radius: 4px;
-      margin-bottom: 16px;
-    }
+    /* FOOTER */
+    footer{background:var(--ivory);border-top:1px solid var(--line);padding:44px 32px}
+    .footer-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+    .footer-logo{font-family:var(--display);font-size:.95rem;font-weight:500;letter-spacing:.18em;color:var(--ink-muted)}
+    .footer-nav{display:flex;gap:28px}.footer-nav a{font-size:.7rem;color:var(--ink-faint);text-decoration:none;transition:color .3s}.footer-nav a:hover{color:var(--sage)}
+    .footer-copy{max-width:1120px;margin:20px auto 0;font-size:.62rem;color:var(--ink-faint);opacity:.6}
 
-    /* Ingredient box */
-    .ingredient-box {
-      background: var(--tag-bg);
-      border-radius: var(--radius);
-      padding: 14px 18px;
-      margin: 0 0 16px;
-      font-size: 0.82rem;
-      line-height: 1.75;
-    }
-    .ingredient-box .label {
-      font-weight: 500;
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
-
-    /* Product description */
-    .product-desc {
-      font-size: 0.88rem;
-      line-height: 1.85;
-      margin-bottom: 16px;
-    }
-
-    /* Rating */
-    .ratings {
-      margin-bottom: 16px;
-    }
-    .rating-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.75rem;
-      color: var(--text-sub);
-      margin-bottom: 6px;
-    }
-    .rating-label {
-      min-width: 64px;
-      text-align: right;
-    }
-    .rating-bar {
-      flex: 1;
-      height: 5px;
-      background: var(--border-light);
-      border-radius: 3px;
-      overflow: hidden;
-      max-width: 140px;
-    }
-    .rating-bar-fill {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 3px;
-      transition: width 0.6s ease-out;
-    }
-    .rating-score {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      min-width: 40px;
-    }
-
-    /* Buy links */
-    .buy-section {
-      padding-top: 14px;
-      border-top: 1px solid var(--border-light);
-    }
-    .buy-title {
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--text-faint);
-      letter-spacing: 0.06em;
-      margin-bottom: 8px;
-    }
-    .buy-links {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .buy-link {
-      font-size: 0.72rem;
-      font-weight: 400;
-      padding: 5px 14px;
-      border: 1px solid var(--accent);
-      border-radius: 100px;
-      color: var(--accent);
-      text-decoration: none;
-      transition: all var(--transition);
-    }
-    .buy-link:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    /* ===== RELATED ARTICLES ===== */
-    .related-section {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-    .related-section .section-label {
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    .related-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .related-link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 16px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius);
-      text-decoration: none;
-      color: inherit;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-    .related-link:hover {
-      transform: translateX(4px);
-      box-shadow: var(--shadow-md);
-    }
-    .related-num {
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--accent);
-      opacity: 0.35;
-      min-width: 32px;
-      text-align: center;
-    }
-    .related-info .related-cat {
-      font-size: 0.65rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-    }
-    .related-info .related-title {
-      font-size: 0.85rem;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-
-    /* ===== SHARE BAR (sticky on mobile) ===== */
-    .share-bar {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 0 24px 48px;
-      text-align: center;
-    }
-    .share-bar p {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      margin-bottom: 10px;
-    }
-    .share-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
-    .share-btn {
-      font-size: 0.72rem;
-      font-weight: 400;
-      padding: 8px 20px;
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      color: var(--text-sub);
-      text-decoration: none;
-      transition: all var(--transition);
-    }
-    .share-btn:hover {
-      background: var(--text);
-      color: #fff;
-      border-color: var(--text);
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 36px 24px;
-      text-align: center;
-    }
-    .footer-brand {
-      font-family: var(--serif);
-      font-size: 0.9rem;
-      color: var(--text-sub);
-      letter-spacing: 0.06em;
-    }
-    .footer-links {
-      margin-top: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-    .footer-links a:hover { color: var(--accent); }
-    .footer-copy {
-      font-size: 0.68rem;
-      color: var(--text-faint);
-      margin-top: 12px;
-      opacity: 0.7;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 600px) {
-      .header-inner { padding: 12px 16px; }
-      .logo { font-size: 1.2rem; }
-      .nav-toggle { display: block; }
-      nav {
-        position: fixed; top: 0; right: 0;
-        width: 260px; height: 100vh;
-        background: var(--bg);
-        flex-direction: column; align-items: flex-start;
-        padding: 72px 24px 24px; gap: 0;
-        transform: translateX(100%);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: -4px 0 24px rgba(0,0,0,0.06);
-        z-index: 105;
-      }
-      nav.open { transform: translateX(0); }
-      nav a {
-        font-size: 0.9rem; padding: 14px 8px;
-        width: 100%; border-bottom: 1px solid var(--border-light);
-        border-radius: 0;
-      }
-      .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.2); z-index: 104; }
-      .nav-overlay.show { display: block; }
-
-      .article-header { padding: 32px 16px 0; }
-      .article-title { font-size: 1.25rem; }
-      .article-hero { padding: 0 16px; }
-      .toc { padding: 0 16px; }
-      .toc-box { padding: 16px 18px; }
-      .article-body { padding: 24px 16px 48px; }
-      .article-body h2 { font-size: 1.08rem; margin-top: 36px; }
-      .article-body h3 { font-size: 0.95rem; margin-top: 28px; }
-      .article-body p { font-size: 0.88rem; }
-
-      .product-card-header { padding: 16px 18px 12px; }
-      .product-card-body { padding: 16px 18px 20px; }
-      .product-name { font-size: 0.95rem; }
-      .rating-label { min-width: 52px; font-size: 0.7rem; }
-
-      .related-section { padding: 0 16px 48px; }
-      .share-bar { padding: 0 16px 36px; }
-      footer { padding: 28px 16px; }
+    /* RESPONSIVE */
+    @media(max-width:600px){
+      .header-inner{padding:14px 20px}.logo{font-size:.95rem}
+      .nav-toggle{display:block}nav{position:fixed;top:0;right:0;width:280px;height:100dvh;background:var(--ivory);flex-direction:column;align-items:flex-start;padding:80px 28px 28px;gap:0;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-8px 0 40px rgba(0,0,0,.08);z-index:205}nav.open{transform:translateX(0)}nav a{font-size:.88rem;padding:16px 4px;width:100%;border-bottom:1px solid var(--line-light);border-radius:0}
+      .nav-overlay.show{display:block}
+      .article-header{padding:36px 20px 0}.article-title{font-size:1.2rem}.article-hero{padding:0 20px}.toc{padding:0 20px}.toc-box{padding:18px 20px}
+      .article-body{padding:28px 20px 48px}.article-body h2{font-size:1.05rem;margin-top:40px}.article-body h3{font-size:.92rem;margin-top:32px}.article-body p{font-size:.86rem}
+      .product-header{padding:18px 20px 14px}.product-body{padding:18px 20px 22px}.product-name{font-size:.92rem}.rating-label{min-width:50px;font-size:.68rem}
+      .related-section{padding:0 20px 48px}.share-bar{padding:0 20px 36px}
+      footer{padding:32px 20px}.footer-inner{flex-direction:column;gap:20px;text-align:center}.footer-nav{justify-content:center;gap:18px;flex-wrap:wrap}.footer-copy{text-align:center}
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
+  <header class="header">
     <div class="header-inner">
-      <a href="/" class="logo">DIG<span>BEAUTY</span></a>
-      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()">
-        <span></span>
-      </button>
+      <a href="/" class="logo">DIGBEAUTY</a>
+      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()"><span></span></button>
       <div class="nav-overlay" onclick="toggleNav()"></div>
-      <nav id="mainNav">
-        <a href="/">記事一覧</a>
-        <a href="/#about">DIGBEAUTYとは</a>
-        <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
-      </nav>
+      <nav id="mainNav"><a href="/">Articles</a><a href="/#philosophy">About</a><a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X</a></nav>
     </div>
   </header>
 
-  <!-- ARTICLE HEADER -->
-  <div class="article-header">
-    <p class="breadcrumb">
-      <a href="/">DIGBEAUTY</a>
-      <span class="sep">›</span>
-      <a href="/">メンズ美容</a>
-    </p>
-    <span class="article-cat-tag">メンズ美容</span>
+  <div class="article-header reveal">
+    <p class="breadcrumb"><a href="/">DIGBEAUTY</a><span class="sep">›</span><a href="/">メンズ美容</a></p>
+    <span class="article-cat">メンズ美容</span>
     <h1 class="article-title">メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ</h1>
-    <div class="article-meta">
-      <span>公開：2026.03.05</span>
-      <span>読了目安：7分</span>
-      <span>Text：DIGBEAUTY編集部</span>
-    </div>
+    <div class="article-meta"><span>2026.03.05</span><span>読了目安：7分</span><span>Text：DIGBEAUTY編集部</span></div>
   </div>
 
-  <!-- HERO IMAGE -->
-  <div class="article-hero">
-    <img src="/assets/img/hero-mens-skincare-beginner.jpg" alt="メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ" loading="lazy" width="1200" height="675" style="width:100%; border-radius:var(--radius);">
-  </div>
+  <div class="article-hero reveal reveal-d1"><div class="hero-placeholder">DIGBEAUTY — 04</div></div>
 
-  <!-- TOC -->
-  <div class="toc">
+  <div class="toc reveal reveal-d2">
     <div class="toc-box">
-      <p class="toc-title">— Contents</p>
+      <p class="toc-label">Contents</p>
       <ol class="toc-list">
         <li><a href="#why">なぜメンズにスキンケアが必要なのか</a></li>
         <li><a href="#3steps">最低限の3ステップを知る</a></li>
@@ -665,465 +159,163 @@
     </div>
   </div>
 
-  <!-- ARTICLE BODY -->
-  <article class="article-body">
+  <article class="article-body reveal reveal-d3">
 
     <h2 id="why">なぜメンズにスキンケアが必要なのか</h2>
-    <p>
-      「男がスキンケアなんて」という時代はとっくに終わりました。実は男性の肌は女性以上にケアが必要な構造をしています。その理由を3つのポイントで解説します。
-    </p>
-    <p>
-      <strong>1. 皮脂量が女性の2〜3倍。</strong>男性ホルモン（テストステロン）の影響で、男性の皮脂分泌量は女性の約2〜3倍。過剰な皮脂は毛穴の詰まりやニキビ、テカリの原因になります。「ベタつくから何もしない」は逆効果で、適切な洗顔と保湿をしないと肌が乾燥を感知し、さらに皮脂を出す悪循環に陥ります。
-    </p>
-    <p>
-      <strong>2. 水分量は女性より少ない。</strong>皮脂は多いのに、角層の水分量は女性の約半分〜7割程度というデータがあります。つまり「オイリーなのに乾燥している」インナードライ状態の男性が非常に多いのです。化粧水で水分を補うことは、テカリ対策にも直結します。
-    </p>
-    <p>
-      <strong>3. シェービングによるダメージ。</strong>髭剃りは角層の表面を物理的に削る行為です。毎日のシェービングで肌のバリア機能が低下し、乾燥・赤み・ヒリつきが慢性化している男性は少なくありません。剃った後の保湿ケアは必須です。
-    </p>
+    <p>「男がスキンケアなんて」という時代はとっくに終わりました。実は男性の肌は女性以上にケアが必要な構造をしています。その理由を3つのポイントで解説します。</p>
+    <p><strong>1. 皮脂量が女性の2〜3倍。</strong>男性ホルモン（テストステロン）の影響で、男性の皮脂分泌量は女性の約2〜3倍。過剰な皮脂は毛穴の詰まりやニキビ、テカリの原因になります。「ベタつくから何もしない」は逆効果で、適切な洗顔と保湿をしないと肌が乾燥を感知し、さらに皮脂を出す悪循環に陥ります。</p>
+    <p><strong>2. 水分量は女性より少ない。</strong>皮脂は多いのに、角層の水分量は女性の約半分〜7割程度というデータがあります。つまり「オイリーなのに乾燥している」インナードライ状態の男性が非常に多いのです。化粧水で水分を補うことは、テカリ対策にも直結します。</p>
+    <p><strong>3. シェービングによるダメージ。</strong>髭剃りは角層の表面を物理的に削る行為です。毎日のシェービングで肌のバリア機能が低下し、乾燥・赤み・ヒリつきが慢性化している男性は少なくありません。剃った後の保湿ケアは必須です。</p>
 
-    <div class="callout">
-      <p class="callout-label">初心者のためのポイント</p>
-      <p>スキンケアは「肌質改善」のためだけのものではありません。清潔感の維持、エイジングケア、ビジネスシーンでの第一印象アップにも直結します。まずは3ステップだけ。1日5分で完了します。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Beginner Tip</p><p>スキンケアは「肌質改善」のためだけのものではありません。清潔感の維持、エイジングケア、ビジネスシーンでの第一印象アップにも直結します。まずは3ステップだけ。1日5分で完了します。</p></div>
 
     <h2 id="3steps">最低限の3ステップを知る</h2>
-    <p>
-      スキンケアの世界は奥が深いですが、初心者が最初に押さえるべきは<strong>洗顔・化粧水・日焼け止め</strong>のたった3ステップです。
-    </p>
-    <p>
-      <strong>洗顔</strong>で余分な皮脂と汚れを落とし、<strong>化粧水</strong>で水分を補って肌を整え、<strong>日焼け止め</strong>で紫外線ダメージから肌を守る。この3つを毎日続けるだけで、肌の状態は確実に変わります。
-    </p>
-    <p>
-      美容液や乳液も気になるかもしれませんが、まずはこの3ステップを1ヶ月続けてみてください。肌の変化を実感してから、必要に応じてアイテムを足していけばOKです。
-    </p>
+    <p>スキンケアの世界は奥が深いですが、初心者が最初に押さえるべきは<strong>洗顔・化粧水・日焼け止め</strong>のたった3ステップです。</p>
+    <p><strong>洗顔</strong>で余分な皮脂と汚れを落とし、<strong>化粧水</strong>で水分を補って肌を整え、<strong>日焼け止め</strong>で紫外線ダメージから肌を守る。この3つを毎日続けるだけで、肌の状態は確実に変わります。</p>
+    <p>美容液や乳液も気になるかもしれませんが、まずはこの3ステップを1ヶ月続けてみてください。肌の変化を実感してから、必要に応じてアイテムを足していけばOKです。</p>
 
-    <div class="callout">
-      <p class="callout-label">朝と夜の使い分け</p>
-      <p>
-        <strong>朝</strong>：洗顔 → 化粧水 → 日焼け止め（3ステップすべて）<br>
-        <strong>夜</strong>：洗顔 → 化粧水（日焼け止めは不要）<br>
-        朝は外出前の紫外線対策が必須。夜は1日の汚れを落として保湿するイメージです。
-      </p>
-    </div>
+    <div class="callout"><p class="callout-label">Morning / Night</p><p><strong>朝</strong>：洗顔 → 化粧水 → 日焼け止め（3ステップすべて）<br><strong>夜</strong>：洗顔 → 化粧水（日焼け止めは不要）<br>朝は外出前の紫外線対策が必須。夜は1日の汚れを落として保湿するイメージです。</p></div>
 
     <h2 id="step1">Step 1：洗顔 — 余分な皮脂だけを落とす</h2>
-    <p>
-      洗顔で大事なのは「落としすぎない」こと。ゴシゴシ洗いや洗浄力の強すぎる洗顔料は、必要な皮脂まで奪い、乾燥とテカリの悪循環を招きます。
-    </p>
-    <p>
-      <strong>正しい洗い方の手順：</strong>まずぬるま湯（32〜34度）で顔全体を軽く濡らします。洗顔料をしっかり泡立て、泡をクッションにして肌をこすらず優しく洗います。Tゾーン（額・鼻）から始め、頬やフェイスラインは最後に。すすぎは20回以上、生え際やフェイスラインの洗い残しに注意しましょう。
-    </p>
+    <p>洗顔で大事なのは「落としすぎない」こと。ゴシゴシ洗いや洗浄力の強すぎる洗顔料は、必要な皮脂まで奪い、乾燥とテカリの悪循環を招きます。</p>
+    <p><strong>正しい洗い方の手順：</strong>まずぬるま湯（32〜34度）で顔全体を軽く濡らします。洗顔料をしっかり泡立て、泡をクッションにして肌をこすらず優しく洗います。Tゾーン（額・鼻）から始め、頬やフェイスラインは最後に。すすぎは20回以上、生え際やフェイスラインの洗い残しに注意しましょう。</p>
 
-    <div class="callout">
-      <p class="callout-label">泡立てのコツ</p>
-      <p>泡立てネットを使えば、少量の洗顔料でも簡単にきめ細かい泡が作れます。100円ショップのもので十分です。泡タイプの洗顔料なら泡立て不要で、初心者には特におすすめ。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Beginner Tip</p><p>泡立てネットを使えば、少量の洗顔料でも簡単にきめ細かい泡が作れます。100円ショップのもので十分です。泡タイプの洗顔料なら泡立て不要で、初心者には特におすすめ。</p></div>
 
-    <!-- ===== PRODUCT: 洗顔 01 ===== -->
     <h3><span class="num">01</span>カウブランド 無添加泡の洗顔料</h3>
     <div class="product-card">
-      <div class="product-card-header">
-        <p class="product-name">カウブランド 無添加泡の洗顔料</p>
-        <p class="product-brand">牛乳石鹸共進社</p>
-      </div>
-      <div class="product-card-body">
+      <div class="product-header"><p class="product-name">カウブランド 無添加泡の洗顔料</p><p class="product-brand">牛乳石鹸共進社</p></div>
+      <div class="product-body">
         <span class="product-price">¥660（税込）/ 200mL</span>
-
-        <div class="ingredient-box">
-          <p class="label">注目成分</p>
-          <p>カリ石ケン素地（アミノ酸系洗浄成分）、セラミドNG（保湿）。着色料・香料・防腐剤・品質安定剤・鉱物油・アルコール不使用。</p>
-        </div>
-
-        <p class="product-desc">
-          ポンプを押すだけできめ細かい泡が出てくる泡タイプ。洗浄力がマイルドで、必要な潤いを残しながら皮脂汚れをしっかり落とします。無添加処方で肌への刺激が極めて少なく、シェービング後の敏感な肌にも安心。セラミドNGが配合されているため、洗い上がりのつっぱり感が少ないのも特徴です。
-        </p>
-
+        <div class="ingredient-box"><p class="label">Key Ingredients</p><p>カリ石ケン素地（アミノ酸系洗浄成分）、セラミドNG（保湿）。着色料・香料・防腐剤・品質安定剤・鉱物油・アルコール不使用。</p></div>
+        <p class="product-desc">ポンプを押すだけできめ細かい泡が出てくる泡タイプ。洗浄力がマイルドで、必要な潤いを残しながら皮脂汚れをしっかり落とします。無添加処方で肌への刺激が極めて少なく、シェービング後の敏感な肌にも安心。セラミドNGが配合されているため、洗い上がりのつっぱり感が少ないのも特徴です。</p>
         <div class="ratings">
-          <div class="rating-row">
-            <span class="rating-label">洗浄力</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:75%"></div></div>
-            <span class="rating-score">3.8 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">低刺激性</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:96%"></div></div>
-            <span class="rating-score">4.8 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">コスパ</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:90%"></div></div>
-            <span class="rating-score">4.5 / 5</span>
-          </div>
+          <div class="rating-row"><span class="rating-label">洗浄力</span><div class="rating-bar"><div class="rating-bar-fill" style="width:75%"></div></div><span class="rating-score">3.8 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">低刺激性</span><div class="rating-bar"><div class="rating-bar-fill" style="width:96%"></div></div><span class="rating-score">4.8 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">コスパ</span><div class="rating-bar"><div class="rating-bar-fill" style="width:90%"></div></div><span class="rating-score">4.5 / 5</span></div>
         </div>
-
-        <div class="buy-section">
-          <p class="buy-title">購入できる場所</p>
-          <div class="buy-links">
-            <a class="buy-link" href="#">Amazon</a>
-            <a class="buy-link" href="#">楽天市場</a>
-            <a class="buy-link" href="#">全国ドラッグストア</a>
-          </div>
-        </div>
+        <div class="buy-section"><p class="buy-title">Where to Buy</p><div class="buy-links"><a class="buy-link" href="#">Amazon</a><a class="buy-link" href="#">楽天市場</a><a class="buy-link" href="#">全国ドラッグストア</a></div></div>
       </div>
     </div>
 
-    <!-- ===== PRODUCT: 洗顔 02 ===== -->
     <h3><span class="num">02</span>ロゼット 洗顔パスタ 海泥スムース</h3>
     <div class="product-card">
-      <div class="product-card-header">
-        <p class="product-name">ロゼット 洗顔パスタ 海泥スムース</p>
-        <p class="product-brand">ロゼット</p>
-      </div>
-      <div class="product-card-body">
+      <div class="product-header"><p class="product-name">ロゼット 洗顔パスタ 海泥スムース</p><p class="product-brand">ロゼット</p></div>
+      <div class="product-body">
         <span class="product-price">¥550（税込）/ 120g</span>
-
-        <div class="ingredient-box">
-          <p class="label">注目成分</p>
-          <p>海泥（ミネラルシルト）、植物由来洗浄成分。ミネラルを豊富に含む海泥が毛穴の汚れを吸着除去。</p>
-        </div>
-
-        <p class="product-desc">
-          1929年から続くロングセラーブランドの人気アイテム。海泥（かいでい）の微細な粒子が毛穴の奥の皮脂汚れを吸着し、すっきり洗い上げます。皮脂が多くテカリが気になる男性に特に相性が良い処方。泡立ちがよく、クリーミーな泡が肌を包み込みます。洗浄力がやや高めなので、洗顔後の化粧水は必ずセットで使いましょう。
-        </p>
-
+        <div class="ingredient-box"><p class="label">Key Ingredients</p><p>海泥（ミネラルシルト）、植物由来洗浄成分。ミネラルを豊富に含む海泥が毛穴の汚れを吸着除去。</p></div>
+        <p class="product-desc">1929年から続くロングセラーブランドの人気アイテム。海泥（かいでい）の微細な粒子が毛穴の奥の皮脂汚れを吸着し、すっきり洗い上げます。皮脂が多くテカリが気になる男性に特に相性が良い処方。泡立ちがよく、クリーミーな泡が肌を包み込みます。洗浄力がやや高めなので、洗顔後の化粧水は必ずセットで使いましょう。</p>
         <div class="ratings">
-          <div class="rating-row">
-            <span class="rating-label">洗浄力</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:88%"></div></div>
-            <span class="rating-score">4.4 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">低刺激性</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:72%"></div></div>
-            <span class="rating-score">3.6 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">コスパ</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:92%"></div></div>
-            <span class="rating-score">4.6 / 5</span>
-          </div>
+          <div class="rating-row"><span class="rating-label">洗浄力</span><div class="rating-bar"><div class="rating-bar-fill" style="width:88%"></div></div><span class="rating-score">4.4 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">低刺激性</span><div class="rating-bar"><div class="rating-bar-fill" style="width:72%"></div></div><span class="rating-score">3.6 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">コスパ</span><div class="rating-bar"><div class="rating-bar-fill" style="width:92%"></div></div><span class="rating-score">4.6 / 5</span></div>
         </div>
-
-        <div class="buy-section">
-          <p class="buy-title">購入できる場所</p>
-          <div class="buy-links">
-            <a class="buy-link" href="#">Amazon</a>
-            <a class="buy-link" href="#">楽天市場</a>
-            <a class="buy-link" href="#">全国ドラッグストア</a>
-          </div>
-        </div>
+        <div class="buy-section"><p class="buy-title">Where to Buy</p><div class="buy-links"><a class="buy-link" href="#">Amazon</a><a class="buy-link" href="#">楽天市場</a><a class="buy-link" href="#">全国ドラッグストア</a></div></div>
       </div>
     </div>
 
     <h2 id="step2">Step 2：化粧水 — 水分を与えて整える</h2>
-    <p>
-      「化粧水は女性が使うもの」と思っていませんか？ 男性の肌は皮脂が多い一方で水分量が少ないため、化粧水による水分補給はむしろ男性にこそ必要です。
-    </p>
-    <p>
-      洗顔後の肌は皮脂膜が一時的に薄くなり、水分が蒸発しやすい状態。ここで化粧水を塗ることで、角層に水分を届け、肌のキメを整えます。結果としてテカリの予防にもつながります。
-    </p>
-    <p>
-      <strong>使い方のコツ：</strong>洗顔後、タオルで軽く水気を拭いたら、できるだけ早く化粧水を。500円玉大を手のひらに取り、顔全体にハンドプレスで押し込むようになじませます。パチパチ叩くのはNG。肌に刺激を与えてしまいます。
-    </p>
+    <p>「化粧水は女性が使うもの」と思っていませんか？ 男性の肌は皮脂が多い一方で水分量が少ないため、化粧水による水分補給はむしろ男性にこそ必要です。</p>
+    <p>洗顔後の肌は皮脂膜が一時的に薄くなり、水分が蒸発しやすい状態。ここで化粧水を塗ることで、角層に水分を届け、肌のキメを整えます。結果としてテカリの予防にもつながります。</p>
+    <p><strong>使い方のコツ：</strong>洗顔後、タオルで軽く水気を拭いたら、できるだけ早く化粧水を。500円玉大を手のひらに取り、顔全体にハンドプレスで押し込むようになじませます。パチパチ叩くのはNG。肌に刺激を与えてしまいます。</p>
 
-    <!-- ===== PRODUCT: 化粧水 01 ===== -->
     <h3><span class="num">01</span>無印良品 化粧水・敏感肌用・高保湿タイプ</h3>
     <div class="product-card">
-      <div class="product-card-header">
-        <p class="product-name">化粧水・敏感肌用・高保湿タイプ</p>
-        <p class="product-brand">無印良品</p>
-      </div>
-      <div class="product-card-body">
+      <div class="product-header"><p class="product-name">化粧水・敏感肌用・高保湿タイプ</p><p class="product-brand">無印良品</p></div>
+      <div class="product-body">
         <span class="product-price">¥690（税込）/ 200mL</span>
-
-        <div class="ingredient-box">
-          <p class="label">注目成分</p>
-          <p>リピジュア（ポリクオタニウム-51）、ヒアルロン酸Na、グレープフルーツ種子エキス。無香料・無着色・無鉱物油・弱酸性・パラベンフリー・アルコールフリー。</p>
-        </div>
-
-        <p class="product-desc">
-          スキンケア入門として圧倒的な支持を集める定番品。リピジュアはヒアルロン酸の約2倍の保湿力を持つとされる成分で、この価格帯に配合されているのは驚きです。サラッとしたテクスチャーでベタつかず、化粧水に慣れていない男性でも使いやすい。無印良品の店舗やコンビニで手軽に買えるのも大きなメリットです。
-        </p>
-
+        <div class="ingredient-box"><p class="label">Key Ingredients</p><p>リピジュア（ポリクオタニウム-51）、ヒアルロン酸Na、グレープフルーツ種子エキス。無香料・無着色・無鉱物油・弱酸性・パラベンフリー・アルコールフリー。</p></div>
+        <p class="product-desc">スキンケア入門として圧倒的な支持を集める定番品。リピジュアはヒアルロン酸の約2倍の保湿力を持つとされる成分で、この価格帯に配合されているのは驚きです。サラッとしたテクスチャーでベタつかず、化粧水に慣れていない男性でも使いやすい。無印良品の店舗やコンビニで手軽に買えるのも大きなメリットです。</p>
         <div class="ratings">
-          <div class="rating-row">
-            <span class="rating-label">保湿力</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:82%"></div></div>
-            <span class="rating-score">4.1 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">低刺激性</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:92%"></div></div>
-            <span class="rating-score">4.6 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">コスパ</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:90%"></div></div>
-            <span class="rating-score">4.5 / 5</span>
-          </div>
+          <div class="rating-row"><span class="rating-label">保湿力</span><div class="rating-bar"><div class="rating-bar-fill" style="width:82%"></div></div><span class="rating-score">4.1 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">低刺激性</span><div class="rating-bar"><div class="rating-bar-fill" style="width:92%"></div></div><span class="rating-score">4.6 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">コスパ</span><div class="rating-bar"><div class="rating-bar-fill" style="width:90%"></div></div><span class="rating-score">4.5 / 5</span></div>
         </div>
-
-        <div class="buy-section">
-          <p class="buy-title">購入できる場所</p>
-          <div class="buy-links">
-            <a class="buy-link" href="#">無印良品 公式</a>
-            <a class="buy-link" href="#">Amazon</a>
-            <a class="buy-link" href="#">全国の無印良品店舗</a>
-          </div>
-        </div>
+        <div class="buy-section"><p class="buy-title">Where to Buy</p><div class="buy-links"><a class="buy-link" href="#">無印良品 公式</a><a class="buy-link" href="#">Amazon</a><a class="buy-link" href="#">全国の無印良品店舗</a></div></div>
       </div>
     </div>
 
-    <!-- ===== PRODUCT: 化粧水 02 ===== -->
     <h3><span class="num">02</span>菊正宗 日本酒の化粧水 高保湿</h3>
     <div class="product-card">
-      <div class="product-card-header">
-        <p class="product-name">菊正宗 日本酒の化粧水 高保湿</p>
-        <p class="product-brand">菊正宗酒造</p>
-      </div>
-      <div class="product-card-body">
+      <div class="product-header"><p class="product-name">菊正宗 日本酒の化粧水 高保湿</p><p class="product-brand">菊正宗酒造</p></div>
+      <div class="product-body">
         <span class="product-price">¥924（税込）/ 500mL</span>
-
-        <div class="ingredient-box">
-          <p class="label">注目成分</p>
-          <p>コメ発酵液（日本酒由来アミノ酸）、セラミド3、セラミド6II、プラセンタエキス、アルブチン</p>
-        </div>
-
-        <p class="product-desc">
-          500mLの大容量で約900円という驚異的コストパフォーマンス。日本酒の醸造過程で生まれるアミノ酸がNMF（天然保湿因子）を補い、セラミド2種が肌のバリア機能を強化します。とろみのあるテクスチャーですが、男性でも意外とすぐ馴染みます。たっぷり使えるので、ボディの保湿にも。日本酒の香りがやや残るため、香りが気になる方は無印良品を選ぶのがベターです。
-        </p>
-
+        <div class="ingredient-box"><p class="label">Key Ingredients</p><p>コメ発酵液（日本酒由来アミノ酸）、セラミド3、セラミド6II、プラセンタエキス、アルブチン</p></div>
+        <p class="product-desc">500mLの大容量で約900円という驚異的コストパフォーマンス。日本酒の醸造過程で生まれるアミノ酸がNMF（天然保湿因子）を補い、セラミド2種が肌のバリア機能を強化します。とろみのあるテクスチャーですが、男性でも意外とすぐ馴染みます。たっぷり使えるので、ボディの保湿にも。日本酒の香りがやや残るため、香りが気になる方は無印良品を選ぶのがベターです。</p>
         <div class="ratings">
-          <div class="rating-row">
-            <span class="rating-label">保湿力</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:85%"></div></div>
-            <span class="rating-score">4.2 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">低刺激性</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:75%"></div></div>
-            <span class="rating-score">3.8 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">コスパ</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:98%"></div></div>
-            <span class="rating-score">4.9 / 5</span>
-          </div>
+          <div class="rating-row"><span class="rating-label">保湿力</span><div class="rating-bar"><div class="rating-bar-fill" style="width:85%"></div></div><span class="rating-score">4.2 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">低刺激性</span><div class="rating-bar"><div class="rating-bar-fill" style="width:75%"></div></div><span class="rating-score">3.8 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">コスパ</span><div class="rating-bar"><div class="rating-bar-fill" style="width:98%"></div></div><span class="rating-score">4.9 / 5</span></div>
         </div>
-
-        <div class="buy-section">
-          <p class="buy-title">購入できる場所</p>
-          <div class="buy-links">
-            <a class="buy-link" href="#">Amazon</a>
-            <a class="buy-link" href="#">楽天市場</a>
-            <a class="buy-link" href="#">マツキヨ等ドラッグストア</a>
-          </div>
-        </div>
+        <div class="buy-section"><p class="buy-title">Where to Buy</p><div class="buy-links"><a class="buy-link" href="#">Amazon</a><a class="buy-link" href="#">楽天市場</a><a class="buy-link" href="#">マツキヨ等ドラッグストア</a></div></div>
       </div>
     </div>
 
     <h2 id="step3">Step 3：日焼け止め — 見落としがちなUVケア</h2>
-    <p>
-      スキンケアの3ステップの中で、男性が最も見落としがちなのが日焼け止めです。「日焼け止めは夏だけ」「海やアウトドアの時だけ」と思っていませんか？
-    </p>
-    <p>
-      紫外線は365日、曇りの日でも地上に届いています。紫外線のうちUV-Aは窓ガラスも透過し、肌の奥の真皮まで到達してコラーゲンを破壊します。<strong>シミ、シワ、たるみの原因の約80%は紫外線</strong>と言われており、エイジングケアの最重要ステップが実は日焼け止めなのです。
-    </p>
-    <p>
-      <strong>選び方のポイント：</strong>通勤・通学レベルの日常使いならSPF30・PA+++で十分。白浮きせず、石鹸で落とせるタイプが毎日続けやすいです。塗り直しは2〜3時間ごとが理想ですが、朝1回塗るだけでもやらないよりはるかに効果があります。
-    </p>
+    <p>スキンケアの3ステップの中で、男性が最も見落としがちなのが日焼け止めです。「日焼け止めは夏だけ」「海やアウトドアの時だけ」と思っていませんか？</p>
+    <p>紫外線は365日、曇りの日でも地上に届いています。紫外線のうちUV-Aは窓ガラスも透過し、肌の奥の真皮まで到達してコラーゲンを破壊します。<strong>シミ、シワ、たるみの原因の約80%は紫外線</strong>と言われており、エイジングケアの最重要ステップが実は日焼け止めなのです。</p>
+    <p><strong>選び方のポイント：</strong>通勤・通学レベルの日常使いならSPF30・PA+++で十分。白浮きせず、石鹸で落とせるタイプが毎日続けやすいです。塗り直しは2〜3時間ごとが理想ですが、朝1回塗るだけでもやらないよりはるかに効果があります。</p>
 
-    <div class="callout">
-      <p class="callout-label">日焼け止めの塗り方</p>
-      <p>顔全体にまんべんなく塗るには、1円玉大を2回に分けて重ね塗りするのがコツ。額・両頬・鼻・あごの5点に置いてから伸ばすと、ムラなく仕上がります。首の後ろや耳も忘れずに。</p>
-    </div>
+    <div class="callout"><p class="callout-label">How to Apply</p><p>顔全体にまんべんなく塗るには、1円玉大を2回に分けて重ね塗りするのがコツ。額・両頬・鼻・あごの5点に置いてから伸ばすと、ムラなく仕上がります。首の後ろや耳も忘れずに。</p></div>
 
-    <!-- ===== PRODUCT: 日焼け止め 01 ===== -->
     <h3><span class="num">01</span>ビオレUV アクアリッチ ウォータリーエッセンス</h3>
     <div class="product-card">
-      <div class="product-card-header">
-        <p class="product-name">ビオレUV アクアリッチ ウォータリーエッセンス</p>
-        <p class="product-brand">花王</p>
-      </div>
-      <div class="product-card-body">
+      <div class="product-header"><p class="product-name">ビオレUV アクアリッチ ウォータリーエッセンス</p><p class="product-brand">花王</p></div>
+      <div class="product-body">
         <span class="product-price">¥810（税込）/ 70g</span>
-
-        <div class="ingredient-box">
-          <p class="label">注目成分</p>
-          <p>SPF50+ / PA++++。ヒアルロン酸、ローヤルゼリーエキス（保湿）。ウォータープルーフ処方ながら石鹸で落とせる設計。</p>
-        </div>
-
-        <p class="product-desc">
-          「日焼け止めはベタつく・白浮きする」というイメージを覆す、水感覚の軽いテクスチャー。SPF50+/PA++++の最高レベルの紫外線カット力がありながら、まるで美容液のようなみずみずしい使用感です。塗った瞬間にスッとなじみ、ベタつきが残らないので、日焼け止め初心者の男性にも抵抗なく使えます。ドラッグストアで手軽に購入可能。
-        </p>
-
+        <div class="ingredient-box"><p class="label">Key Ingredients</p><p>SPF50+ / PA++++。ヒアルロン酸、ローヤルゼリーエキス（保湿）。ウォータープルーフ処方ながら石鹸で落とせる設計。</p></div>
+        <p class="product-desc">「日焼け止めはベタつく・白浮きする」というイメージを覆す、水感覚の軽いテクスチャー。SPF50+/PA++++の最高レベルの紫外線カット力がありながら、まるで美容液のようなみずみずしい使用感です。塗った瞬間にスッとなじみ、ベタつきが残らないので、日焼け止め初心者の男性にも抵抗なく使えます。ドラッグストアで手軽に購入可能。</p>
         <div class="ratings">
-          <div class="rating-row">
-            <span class="rating-label">UVカット力</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:96%"></div></div>
-            <span class="rating-score">4.8 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">使用感</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:90%"></div></div>
-            <span class="rating-score">4.5 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">コスパ</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:82%"></div></div>
-            <span class="rating-score">4.1 / 5</span>
-          </div>
+          <div class="rating-row"><span class="rating-label">UVカット力</span><div class="rating-bar"><div class="rating-bar-fill" style="width:96%"></div></div><span class="rating-score">4.8 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">使用感</span><div class="rating-bar"><div class="rating-bar-fill" style="width:90%"></div></div><span class="rating-score">4.5 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">コスパ</span><div class="rating-bar"><div class="rating-bar-fill" style="width:82%"></div></div><span class="rating-score">4.1 / 5</span></div>
         </div>
-
-        <div class="buy-section">
-          <p class="buy-title">購入できる場所</p>
-          <div class="buy-links">
-            <a class="buy-link" href="#">Amazon</a>
-            <a class="buy-link" href="#">楽天市場</a>
-            <a class="buy-link" href="#">全国ドラッグストア・コンビニ</a>
-          </div>
-        </div>
+        <div class="buy-section"><p class="buy-title">Where to Buy</p><div class="buy-links"><a class="buy-link" href="#">Amazon</a><a class="buy-link" href="#">楽天市場</a><a class="buy-link" href="#">全国ドラッグストア・コンビニ</a></div></div>
       </div>
     </div>
 
-    <!-- ===== PRODUCT: 日焼け止め 02 ===== -->
     <h3><span class="num">02</span>ニベアUV ウォータージェル</h3>
     <div class="product-card">
-      <div class="product-card-header">
-        <p class="product-name">ニベアUV ウォータージェル SPF35</p>
-        <p class="product-brand">花王（ニベア）</p>
-      </div>
-      <div class="product-card-body">
+      <div class="product-header"><p class="product-name">ニベアUV ウォータージェル SPF35</p><p class="product-brand">花王（ニベア）</p></div>
+      <div class="product-body">
         <span class="product-price">¥770（税込）/ 80g</span>
-
-        <div class="ingredient-box">
-          <p class="label">注目成分</p>
-          <p>SPF35 / PA+++。ヒアルロン酸（保湿）、化粧下地効果あり。ジェルタイプで伸びが良く、石鹸で落とせる処方。</p>
-        </div>
-
-        <p class="product-desc">
-          SPF35/PA+++は通勤・通学の日常使いに最適なバランス。ジェルタイプなので伸びが非常に良く、顔全体に素早く塗れます。白浮きゼロ、ベタつきゼロで、化粧下地としても使用可能。80gの大容量で毎日使ってもコスパが良い。まずは低めのSPFから始めたい、肌への負担を最小限にしたいという方に最適です。
-        </p>
-
+        <div class="ingredient-box"><p class="label">Key Ingredients</p><p>SPF35 / PA+++。ヒアルロン酸（保湿）、化粧下地効果あり。ジェルタイプで伸びが良く、石鹸で落とせる処方。</p></div>
+        <p class="product-desc">SPF35/PA+++は通勤・通学の日常使いに最適なバランス。ジェルタイプなので伸びが非常に良く、顔全体に素早く塗れます。白浮きゼロ、ベタつきゼロで、化粧下地としても使用可能。80gの大容量で毎日使ってもコスパが良い。まずは低めのSPFから始めたい、肌への負担を最小限にしたいという方に最適です。</p>
         <div class="ratings">
-          <div class="rating-row">
-            <span class="rating-label">UVカット力</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:72%"></div></div>
-            <span class="rating-score">3.6 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">使用感</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:92%"></div></div>
-            <span class="rating-score">4.6 / 5</span>
-          </div>
-          <div class="rating-row">
-            <span class="rating-label">コスパ</span>
-            <div class="rating-bar"><div class="rating-bar-fill" style="width:88%"></div></div>
-            <span class="rating-score">4.4 / 5</span>
-          </div>
+          <div class="rating-row"><span class="rating-label">UVカット力</span><div class="rating-bar"><div class="rating-bar-fill" style="width:72%"></div></div><span class="rating-score">3.6 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">使用感</span><div class="rating-bar"><div class="rating-bar-fill" style="width:92%"></div></div><span class="rating-score">4.6 / 5</span></div>
+          <div class="rating-row"><span class="rating-label">コスパ</span><div class="rating-bar"><div class="rating-bar-fill" style="width:88%"></div></div><span class="rating-score">4.4 / 5</span></div>
         </div>
-
-        <div class="buy-section">
-          <p class="buy-title">購入できる場所</p>
-          <div class="buy-links">
-            <a class="buy-link" href="#">Amazon</a>
-            <a class="buy-link" href="#">楽天市場</a>
-            <a class="buy-link" href="#">全国ドラッグストア・コンビニ</a>
-          </div>
-        </div>
+        <div class="buy-section"><p class="buy-title">Where to Buy</p><div class="buy-links"><a class="buy-link" href="#">Amazon</a><a class="buy-link" href="#">楽天市場</a><a class="buy-link" href="#">全国ドラッグストア・コンビニ</a></div></div>
       </div>
     </div>
 
-    <!-- ===== SUMMARY ===== -->
     <h2 id="summary">まとめ — 続けるコツと朝晩のルーティン</h2>
-    <p>
-      メンズスキンケアは「洗顔・化粧水・日焼け止め」の3ステップが基本。すべてドラッグストアで1,000円以下で揃えられるので、初期投資は約2,000円で始められます。
-    </p>
-    <p>
-      <strong>朝のルーティン（約3分）：</strong><br>
-      洗顔料で優しく洗う → タオルで拭いたらすぐ化粧水をハンドプレス → 日焼け止めを5点置きで塗る。これで完了です。
-    </p>
-    <p>
-      <strong>夜のルーティン（約2分）：</strong><br>
-      洗顔料で1日の汚れと日焼け止めを落とす → 化粧水をハンドプレス。夜は日焼け止め不要なので、さらにシンプルです。
-    </p>
+    <p>メンズスキンケアは「洗顔・化粧水・日焼け止め」の3ステップが基本。すべてドラッグストアで1,000円以下で揃えられるので、初期投資は約2,000円で始められます。</p>
+    <p><strong>朝のルーティン（約3分）：</strong><br>洗顔料で優しく洗う → タオルで拭いたらすぐ化粧水をハンドプレス → 日焼け止めを5点置きで塗る。これで完了です。</p>
+    <p><strong>夜のルーティン（約2分）：</strong><br>洗顔料で1日の汚れと日焼け止めを落とす → 化粧水をハンドプレス。夜は日焼け止め不要なので、さらにシンプルです。</p>
 
-    <div class="callout">
-      <p class="callout-label">続けるための3つのコツ</p>
-      <p>
-        <strong>1. 洗面台にまとめて置く。</strong>アイテムが目に入る場所にあれば、習慣化しやすくなります。<br>
-        <strong>2. 最初は安いもので十分。</strong>この記事で紹介した製品はすべて1,000円以下。合わなければ気軽に変えられます。<br>
-        <strong>3. 完璧を目指さない。</strong>塗り忘れた日があっても気にしない。「続けること」が最大の効果です。
-      </p>
-    </div>
+    <div class="callout"><p class="callout-label">Beginner Tip</p><p><strong>1. 洗面台にまとめて置く。</strong>アイテムが目に入る場所にあれば、習慣化しやすくなります。<br><strong>2. 最初は安いもので十分。</strong>この記事で紹介した製品はすべて1,000円以下。合わなければ気軽に変えられます。<br><strong>3. 完璧を目指さない。</strong>塗り忘れた日があっても気にしない。「続けること」が最大の効果です。</p></div>
 
-    <p>
-      肌の変化が実感できるのは、早い人で2週間、一般的には1〜3ヶ月かかります。焦らず、毎日の歯磨きと同じ感覚でルーティンに組み込んでみてください。DIGBEAUTYでは、成分と処方にフォーカスしたスキンケア情報を今後も発信していきます。
-    </p>
+    <p>肌の変化が実感できるのは、早い人で2週間、一般的には1〜3ヶ月かかります。焦らず、毎日の歯磨きと同じ感覚でルーティンに組み込んでみてください。DIGBEAUTYでは、成分と処方にフォーカスしたスキンケア情報を今後も発信していきます。</p>
   </article>
 
-  <!-- SHARE -->
-  <div class="share-bar">
-    <p>この記事をシェアする</p>
-    <div class="share-buttons">
-      <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://beauty.plucksworld.com/articles/mens-skincare-beginner.html&text=%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2%E5%AE%8C%E5%85%A8%E5%85%A5%E9%96%80%20%7C%20DIGBEAUTY&utm_source=twitter&utm_medium=social&utm_campaign=launch&utm_content=04_mens" target="_blank" rel="noopener">Xでシェア</a>
-      <a class="share-btn" href="#" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>{this.textContent='URLをコピー'},2000);return false;">URLをコピー</a>
-    </div>
-  </div>
+  <div class="share-bar"><p>この記事をシェアする</p><div class="share-buttons"><a class="share-btn" href="https://twitter.com/intent/tweet?url=https://digbeauty.plucksworld.com/articles/mens-skincare-beginner.html&text=%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2%E5%AE%8C%E5%85%A8%E5%85%A5%E9%96%80%20%7C%20DIGBEAUTY&utm_source=twitter&utm_medium=social&utm_campaign=launch&utm_content=04_mens" target="_blank" rel="noopener">Xでシェア</a><a class="share-btn" href="#" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>{this.textContent='URLをコピー'},2000);return false;">URLをコピー</a></div></div>
 
-  <!-- RELATED -->
   <section class="related-section">
-    <p class="section-label">— Related Articles</p>
+    <p class="related-label">Related Articles</p>
     <div class="related-list">
-      <a class="related-link" href="/articles/moisturizer-under-1000yen.html">
-        <span class="related-num">01</span>
-        <div class="related-info">
-          <span class="related-cat">発掘レビュー</span>
-          <p class="related-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</p>
-        </div>
-      </a>
-      <a class="related-link" href="/articles/retinol-guide.html">
-        <span class="related-num">02</span>
-        <div class="related-info">
-          <span class="related-cat">成分辞典</span>
-          <p class="related-title">レチノール入門 — 濃度・種類・選び方を論文ベースで完全解説</p>
-        </div>
-      </a>
-      <a class="related-link" href="/articles/sauna-skin-science.html">
-        <span class="related-num">05</span>
-        <div class="related-info">
-          <span class="related-cat">ライフスタイル</span>
-          <p class="related-title">サウナ×美肌の科学 — HSP・血流・自律神経から読み解く</p>
-        </div>
-      </a>
+      <a class="related-link" href="/articles/moisturizer-under-1000yen.html"><span class="related-num">01</span><div><span class="related-cat">発掘レビュー</span><p class="related-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</p></div></a>
+      <a class="related-link" href="/articles/retinol-guide.html"><span class="related-num">02</span><div><span class="related-cat">成分辞典</span><p class="related-title">レチノール入門 — 濃度・種類・選び方を論文ベースで完全解説</p></div></a>
+      <a class="related-link" href="/articles/sauna-skin-science.html"><span class="related-num">05</span><div><span class="related-cat">ライフスタイル</span><p class="related-title">サウナ×美肌の科学 — HSP・血流・自律神経から読み解く</p></div></a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-brand">DIGBEAUTY — 美を、掘り当てろ。</div>
-    <div class="footer-links">
-      <a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a>
-      <a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a>
-      <a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a>
-      <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
-    </div>
+    <div class="footer-inner"><div class="footer-logo">DIGBEAUTY</div><nav class="footer-nav"><a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a><a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a><a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a><a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X</a></nav></div>
     <p class="footer-copy">© 2026 plucks world</p>
   </footer>
 
-  <script>
-    function toggleNav() {
-      document.getElementById('mainNav').classList.toggle('open');
-      document.querySelector('.nav-toggle').classList.toggle('active');
-      document.querySelector('.nav-overlay').classList.toggle('show');
-    }
-    document.querySelectorAll('#mainNav a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        if (window.innerWidth <= 600) toggleNav();
-      });
-    });
-  </script>
-
+  <script>function toggleNav(){document.getElementById('mainNav').classList.toggle('open');document.querySelector('.nav-toggle').classList.toggle('active');document.querySelector('.nav-overlay').classList.toggle('show')}document.querySelectorAll('#mainNav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=600)toggleNav()}))</script>
 </body>
 </html>

@@ -5,658 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>サウナ×美肌の科学 — HSP・血流・自律神経から読み解く | DIGBEAUTY</title>
   <meta name="description" content="サウナで肌がきれいになるのは本当？HSP、血流改善、自律神経のリセットなど、サウナと美肌の関係を科学的に解説。">
-
-  <!-- Favicon / Touch Icons -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#2D6A4F">
-
-  <!-- OGP -->
+  <meta name="theme-color" content="#3D5A47">
   <meta property="og:title" content="サウナ×美肌の科学 — HSP・血流・自律神経から読み解く">
   <meta property="og:description" content="サウナで肌がきれいになるのは本当？HSP、血流改善、自律神経のリセットなど、サウナと美肌の関係を科学的に解説。">
-  <meta property="og:url" content="https://beauty.plucksworld.com/articles/sauna-skin-science.html">
-  <meta property="og:image" content="https://beauty.plucksworld.com/assets/ogp-sauna-skin-science.png">
+  <meta property="og:url" content="https://digbeauty.plucksworld.com/articles/sauna-skin-science.html">
+  <meta property="og:image" content="https://digbeauty.plucksworld.com/assets/ogp-sauna-skin-science.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="DIGBEAUTY">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@digbeauty">
-
-  <!-- Google Search Console verification (placeholder) -->
-  <!-- <meta name="google-site-verification" content="XXXXXXXXXX"> -->
-
-  <!-- GA4 (placeholder — 測定ID差し替え) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
-
-  <!-- Fonts -->
+  <!-- GA4 placeholder -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Noto+Serif+JP:wght@200;300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 
   <style>
-    /* =============================================
-       DIGBEAUTY — Article Template CSS
-       ============================================= */
-
     :root {
-      --bg: #FAFAF8;
-      --bg-card: #FFFFFF;
-      --text: #1A1A1A;
-      --text-mid: #4A4A4A;
-      --text-sub: #6B6B6B;
-      --text-faint: #9A9A9A;
-      --accent: #2D6A4F;
-      --accent-light: #D8F3DC;
-      --accent-dark: #1B4332;
-      --accent-mid: #40916C;
-      --border: #E8E6E1;
-      --border-light: #F0EDE8;
-      --tag-bg: #F0EDE8;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
-      --mono: 'JetBrains Mono', 'SF Mono', monospace;
-      --article-w: 700px;
-      --radius: 6px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
-      --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
-      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --ivory:#F7F5F1;--cream:#F0EDE7;--sand:#E4DFD7;--warm-bg:#EDE8E0;--white:#FDFCFA;
+      --ink:#1C1C1C;--ink-soft:#3A3A3A;--ink-muted:#6B6864;--ink-faint:#A8A29E;
+      --sage:#3D5A47;--sage-muted:#5A7A62;--sage-light:#C8D5C0;--sage-wash:#E8EFE6;
+      --gold:#9A8460;--gold-light:#D4C8B0;
+      --line:#DDD8D0;--line-light:#EAE6DF;
+      --display:'Playfair Display',Georgia,serif;
+      --serif-jp:'Noto Serif JP','Yu Mincho',serif;
+      --sans:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+      --serif-en:'Source Serif 4',Georgia,serif;
+      --article-w:680px;
+      --ease:cubic-bezier(.25,.1,.25,1);
+      --ease-out:cubic-bezier(0,0,.2,1);
     }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{font-size:16px;scroll-behavior:smooth}
+    body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--ivory);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:10000;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");background-size:512px}
+    img{max-width:100%;height:auto;display:block}a{color:inherit}
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-size: 16px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    body {
-      font-family: var(--sans);
-      font-weight: 300;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.9;
-      letter-spacing: 0.02em;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; }
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{animation:fadeUp .8s var(--ease-out) both}.reveal-d1{animation-delay:.12s}.reveal-d2{animation-delay:.24s}.reveal-d3{animation-delay:.36s}
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    /* HEADER */
+    .header{position:sticky;top:0;z-index:200;background:rgba(247,245,241,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    .header-inner{max-width:1120px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line-light)}
+    .logo{font-family:var(--display);font-size:1.15rem;font-weight:500;letter-spacing:.18em;color:var(--ink);text-decoration:none;transition:opacity .3s}.logo:hover{opacity:.6}
+    nav{display:flex;gap:6px;align-items:center}nav a{font-size:.73rem;font-weight:400;letter-spacing:.05em;color:var(--ink-muted);text-decoration:none;padding:8px 14px;border-radius:100px;transition:all .3s var(--ease)}nav a:hover{color:var(--sage);background:var(--sage-wash)}
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;width:32px;height:32px;position:relative;z-index:210}.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{display:block;width:18px;height:1px;background:var(--ink);transition:all .35s var(--ease);position:absolute;left:7px}.nav-toggle span{top:15px}.nav-toggle span::before{content:'';top:-7px}.nav-toggle span::after{content:'';top:7px}.nav-toggle.active span{background:transparent}.nav-toggle.active span::before{top:0;transform:rotate(45deg)}.nav-toggle.active span::after{top:0;transform:rotate(-45deg)}
+    .nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.15);z-index:199;backdrop-filter:blur(3px)}.nav-overlay.show{display:block}
 
-    /* ===== HEADER ===== */
-    .site-header {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(250,250,248,0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-light);
-    }
-    .header-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      font-family: var(--serif);
-      font-size: 1.45rem;
-      font-weight: 600;
-      color: var(--text);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      transition: opacity var(--transition);
-    }
-    .logo:hover { opacity: 0.7; }
-    .logo span { color: var(--accent); }
+    /* ARTICLE HEADER */
+    .article-header{max-width:var(--article-w);margin:0 auto;padding:56px 24px 0}
+    .breadcrumb{font-size:.7rem;color:var(--ink-faint);margin-bottom:24px}.breadcrumb a{color:var(--ink-muted);text-decoration:none;transition:color .3s}.breadcrumb a:hover{color:var(--sage)}.breadcrumb .sep{margin:0 6px;color:var(--line)}
+    .article-cat{display:inline-block;font-size:.62rem;font-weight:500;letter-spacing:.1em;color:var(--sage);background:var(--sage-wash);padding:4px 14px;border-radius:100px;margin-bottom:16px}
+    .article-title{font-family:var(--serif-jp);font-size:clamp(1.35rem,3.8vw,1.75rem);font-weight:500;line-height:1.6;letter-spacing:.02em;margin-bottom:20px}
+    .article-meta{font-size:.7rem;color:var(--ink-faint);display:flex;gap:16px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid var(--line)}
 
-    .nav-toggle {
-      display: none;
-      background: none; border: none; cursor: pointer;
-      width: 28px; height: 28px; position: relative; z-index: 110;
-    }
-    .nav-toggle span,
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-      display: block; width: 20px; height: 1.5px;
-      background: var(--text); transition: all 0.3s;
-      position: absolute; left: 4px;
-    }
-    .nav-toggle span { top: 13px; }
-    .nav-toggle span::before { content: ''; top: -6px; }
-    .nav-toggle span::after { content: ''; top: 6px; }
-    .nav-toggle.active span { background: transparent; }
-    .nav-toggle.active span::before { top: 0; transform: rotate(45deg); }
-    .nav-toggle.active span::after { top: 0; transform: rotate(-45deg); }
+    /* Hero image */
+    .article-hero{max-width:var(--article-w);margin:32px auto 0;padding:0 24px}
+    .hero-placeholder{width:100%;aspect-ratio:16/9;background:linear-gradient(145deg,#DDD4CA 0%,#D0C4B8 40%,#C8D5C0 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.1rem;font-style:italic;color:rgba(255,255,255,.5)}
 
-    nav { display: flex; align-items: center; gap: 4px; }
-    nav a {
-      font-size: 0.78rem; font-weight: 400; color: var(--text-sub);
-      text-decoration: none; padding: 6px 12px; border-radius: 4px;
-      letter-spacing: 0.04em; transition: color var(--transition), background var(--transition);
-    }
-    nav a:hover { color: var(--accent); background: var(--accent-light); }
+    /* TOC */
+    .toc{max-width:var(--article-w);margin:32px auto 0;padding:0 24px}
+    .toc-box{background:var(--white);border:1px solid var(--line-light);border-radius:8px;padding:24px 28px}
+    .toc-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px}
+    .toc-list{list-style:none;counter-reset:toc}.toc-list li{counter-increment:toc;margin-bottom:5px}.toc-list li a{font-size:.82rem;color:var(--ink-soft);text-decoration:none;display:flex;align-items:baseline;gap:10px;padding:4px 0;transition:color .3s}.toc-list li a::before{content:counter(toc,decimal-leading-zero);font-family:var(--display);font-style:italic;font-size:.72rem;color:var(--ink-faint);min-width:22px}.toc-list li a:hover{color:var(--sage)}
 
-    /* ===== ARTICLE HEADER ===== */
-    .article-header {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 48px 24px 0;
-      animation: fadeUp 0.7s ease-out both;
-    }
-    .breadcrumb {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      margin-bottom: 20px;
-    }
-    .breadcrumb a {
-      color: var(--text-sub);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-    .breadcrumb a:hover { color: var(--accent); }
-    .breadcrumb .sep { margin: 0 6px; color: var(--border); }
-    .article-cat-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 4px 14px;
-      border-radius: 100px;
-      letter-spacing: 0.06em;
-      margin-bottom: 14px;
-    }
-    .article-title {
-      font-size: clamp(1.35rem, 4vw, 1.85rem);
-      font-weight: 700;
-      line-height: 1.5;
-      letter-spacing: 0.01em;
-      margin-bottom: 16px;
-    }
-    .article-meta {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-    }
+    /* ARTICLE BODY */
+    .article-body{max-width:var(--article-w);margin:0 auto;padding:40px 24px 72px}
+    .article-body h2{font-family:var(--serif-jp);font-size:1.15rem;font-weight:500;margin:56px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line);line-height:1.6;letter-spacing:.02em}.article-body h2:first-child{margin-top:0}
+    .article-body h3{font-size:1rem;font-weight:500;margin:40px 0 14px;display:flex;align-items:center;gap:10px;line-height:1.5}
+    .article-body h3 .num{font-family:var(--display);font-size:.78rem;font-style:italic;color:var(--sage);background:var(--sage-wash);padding:2px 10px;border-radius:100px}
+    .article-body p{margin-bottom:22px;font-size:.9rem;line-height:2}.article-body strong{font-weight:500;color:var(--ink)}
 
-    /* Hero image area */
-    .article-hero {
-      max-width: var(--article-w);
-      margin: 28px auto 0;
-      padding: 0 24px;
-      animation: fadeUp 0.7s 0.12s ease-out both;
-    }
-    .article-hero .hero-placeholder {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 50%, #e8e3dc 100%);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--accent);
-      opacity: 0.45;
-    }
+    /* Callout */
+    .callout{background:var(--sage-wash);border-radius:8px;padding:20px 24px;margin:24px 0 28px;font-size:.85rem;line-height:1.9;position:relative}.callout::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--sage);border-radius:3px 0 0 3px}
+    .callout-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
 
-    /* ===== TOC ===== */
-    .toc {
-      max-width: var(--article-w);
-      margin: 32px auto 0;
-      padding: 0 24px;
-      animation: fadeUp 0.7s 0.2s ease-out both;
-    }
-    .toc-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-    }
-    .toc-title {
-      font-size: 0.72rem;
-      font-family: var(--mono);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    .toc-list {
-      list-style: none;
-      counter-reset: toc;
-    }
-    .toc-list li {
-      counter-increment: toc;
-      margin-bottom: 6px;
-    }
-    .toc-list li a {
-      font-size: 0.82rem;
-      color: var(--text-mid);
-      text-decoration: none;
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      transition: color var(--transition);
-    }
-    .toc-list li a::before {
-      content: counter(toc, decimal-leading-zero);
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      color: var(--text-faint);
-      min-width: 20px;
-    }
-    .toc-list li a:hover { color: var(--accent); }
+    /* SHARE */
+    .share-bar{max-width:var(--article-w);margin:0 auto;padding:0 24px 48px;text-align:center}.share-bar p{font-size:.7rem;color:var(--ink-faint);margin-bottom:12px}.share-buttons{display:flex;gap:10px;justify-content:center}.share-btn{font-size:.7rem;padding:8px 22px;border:1px solid var(--line);border-radius:100px;color:var(--ink-muted);text-decoration:none;transition:all .3s var(--ease)}.share-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 
-    /* ===== ARTICLE BODY ===== */
-    .article-body {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 36px 24px 64px;
-      animation: fadeUp 0.7s 0.28s ease-out both;
-    }
-    .article-body h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin: 48px 0 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--accent-light);
-      line-height: 1.55;
-    }
-    .article-body h2:first-child { margin-top: 0; }
-    .article-body h3 {
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin: 36px 0 12px;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .article-body h3 .num {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-    .article-body p {
-      margin-bottom: 20px;
-      font-size: 0.92rem;
-    }
-    .article-body strong {
-      font-weight: 500;
-      color: var(--text);
-    }
+    /* RELATED */
+    .related-section{max-width:var(--article-w);margin:0 auto;padding:0 24px 80px}
+    .related-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:16px}
+    .related-list{display:flex;flex-direction:column;gap:10px}.related-link{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--white);border:1px solid var(--line-light);border-radius:8px;text-decoration:none;color:inherit;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}.related-link:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(0,0,0,.04)}
+    .related-num{font-family:var(--display);font-size:1.2rem;font-style:italic;color:var(--ink-faint);min-width:30px;text-align:center}.related-cat{font-size:.6rem;color:var(--sage);letter-spacing:.06em}.related-title{font-size:.85rem;font-weight:400;line-height:1.55}
 
-    /* Callout / Note */
-    .callout {
-      background: var(--accent-light);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 16px 20px;
-      margin: 20px 0 24px;
-      font-size: 0.85rem;
-      line-height: 1.8;
-    }
-    .callout .callout-label {
-      font-weight: 500;
-      font-size: 0.72rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      margin-bottom: 4px;
-    }
+    /* FOOTER */
+    footer{background:var(--ivory);border-top:1px solid var(--line);padding:44px 32px}
+    .footer-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+    .footer-logo{font-family:var(--display);font-size:.95rem;font-weight:500;letter-spacing:.18em;color:var(--ink-muted)}
+    .footer-nav{display:flex;gap:28px}.footer-nav a{font-size:.7rem;color:var(--ink-faint);text-decoration:none;transition:color .3s}.footer-nav a:hover{color:var(--sage)}
+    .footer-copy{max-width:1120px;margin:20px auto 0;font-size:.62rem;color:var(--ink-faint);opacity:.6}
 
-    /* ===== PRODUCT CARD ===== */
-    .product-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      margin: 16px 0 36px;
-      overflow: hidden;
-    }
-    .product-card-header {
-      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 100%);
-      padding: 20px 24px 16px;
-    }
-    .product-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-    .product-brand {
-      font-size: 0.78rem;
-      color: var(--text-sub);
-    }
-    .product-card-body {
-      padding: 20px 24px 24px;
-    }
-    .product-price {
-      display: inline-block;
-      font-family: var(--mono);
-      font-size: 0.82rem;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 3px 12px;
-      border-radius: 4px;
-      margin-bottom: 16px;
-    }
-
-    /* Ingredient box */
-    .ingredient-box {
-      background: var(--tag-bg);
-      border-radius: var(--radius);
-      padding: 14px 18px;
-      margin: 0 0 16px;
-      font-size: 0.82rem;
-      line-height: 1.75;
-    }
-    .ingredient-box .label {
-      font-weight: 500;
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
-
-    /* Product description */
-    .product-desc {
-      font-size: 0.88rem;
-      line-height: 1.85;
-      margin-bottom: 16px;
-    }
-
-    /* Rating */
-    .ratings {
-      margin-bottom: 16px;
-    }
-    .rating-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.75rem;
-      color: var(--text-sub);
-      margin-bottom: 6px;
-    }
-    .rating-label {
-      min-width: 64px;
-      text-align: right;
-    }
-    .rating-bar {
-      flex: 1;
-      height: 5px;
-      background: var(--border-light);
-      border-radius: 3px;
-      overflow: hidden;
-      max-width: 140px;
-    }
-    .rating-bar-fill {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 3px;
-      transition: width 0.6s ease-out;
-    }
-    .rating-score {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      min-width: 40px;
-    }
-
-    /* Buy links */
-    .buy-section {
-      padding-top: 14px;
-      border-top: 1px solid var(--border-light);
-    }
-    .buy-title {
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--text-faint);
-      letter-spacing: 0.06em;
-      margin-bottom: 8px;
-    }
-    .buy-links {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .buy-link {
-      font-size: 0.72rem;
-      font-weight: 400;
-      padding: 5px 14px;
-      border: 1px solid var(--accent);
-      border-radius: 100px;
-      color: var(--accent);
-      text-decoration: none;
-      transition: all var(--transition);
-    }
-    .buy-link:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    /* ===== RELATED ARTICLES ===== */
-    .related-section {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-    .related-section .section-label {
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    .related-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .related-link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 16px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius);
-      text-decoration: none;
-      color: inherit;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-    .related-link:hover {
-      transform: translateX(4px);
-      box-shadow: var(--shadow-md);
-    }
-    .related-num {
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--accent);
-      opacity: 0.35;
-      min-width: 32px;
-      text-align: center;
-    }
-    .related-info .related-cat {
-      font-size: 0.65rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-    }
-    .related-info .related-title {
-      font-size: 0.85rem;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-
-    /* ===== SHARE BAR (sticky on mobile) ===== */
-    .share-bar {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 0 24px 48px;
-      text-align: center;
-    }
-    .share-bar p {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      margin-bottom: 10px;
-    }
-    .share-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
-    .share-btn {
-      font-size: 0.72rem;
-      font-weight: 400;
-      padding: 8px 20px;
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      color: var(--text-sub);
-      text-decoration: none;
-      transition: all var(--transition);
-    }
-    .share-btn:hover {
-      background: var(--text);
-      color: #fff;
-      border-color: var(--text);
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 36px 24px;
-      text-align: center;
-    }
-    .footer-brand {
-      font-family: var(--serif);
-      font-size: 0.9rem;
-      color: var(--text-sub);
-      letter-spacing: 0.06em;
-    }
-    .footer-links {
-      margin-top: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-    .footer-links a:hover { color: var(--accent); }
-    .footer-copy {
-      font-size: 0.68rem;
-      color: var(--text-faint);
-      margin-top: 12px;
-      opacity: 0.7;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 600px) {
-      .header-inner { padding: 12px 16px; }
-      .logo { font-size: 1.2rem; }
-      .nav-toggle { display: block; }
-      nav {
-        position: fixed; top: 0; right: 0;
-        width: 260px; height: 100vh;
-        background: var(--bg);
-        flex-direction: column; align-items: flex-start;
-        padding: 72px 24px 24px; gap: 0;
-        transform: translateX(100%);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: -4px 0 24px rgba(0,0,0,0.06);
-        z-index: 105;
-      }
-      nav.open { transform: translateX(0); }
-      nav a {
-        font-size: 0.9rem; padding: 14px 8px;
-        width: 100%; border-bottom: 1px solid var(--border-light);
-        border-radius: 0;
-      }
-      .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.2); z-index: 104; }
-      .nav-overlay.show { display: block; }
-
-      .article-header { padding: 32px 16px 0; }
-      .article-title { font-size: 1.25rem; }
-      .article-hero { padding: 0 16px; }
-      .toc { padding: 0 16px; }
-      .toc-box { padding: 16px 18px; }
-      .article-body { padding: 24px 16px 48px; }
-      .article-body h2 { font-size: 1.08rem; margin-top: 36px; }
-      .article-body h3 { font-size: 0.95rem; margin-top: 28px; }
-      .article-body p { font-size: 0.88rem; }
-
-      .product-card-header { padding: 16px 18px 12px; }
-      .product-card-body { padding: 16px 18px 20px; }
-      .product-name { font-size: 0.95rem; }
-      .rating-label { min-width: 52px; font-size: 0.7rem; }
-
-      .related-section { padding: 0 16px 48px; }
-      .share-bar { padding: 0 16px 36px; }
-      footer { padding: 28px 16px; }
+    /* RESPONSIVE */
+    @media(max-width:600px){
+      .header-inner{padding:14px 20px}.logo{font-size:.95rem}
+      .nav-toggle{display:block}nav{position:fixed;top:0;right:0;width:280px;height:100dvh;background:var(--ivory);flex-direction:column;align-items:flex-start;padding:80px 28px 28px;gap:0;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-8px 0 40px rgba(0,0,0,.08);z-index:205}nav.open{transform:translateX(0)}nav a{font-size:.88rem;padding:16px 4px;width:100%;border-bottom:1px solid var(--line-light);border-radius:0}
+      .nav-overlay.show{display:block}
+      .article-header{padding:36px 20px 0}.article-title{font-size:1.2rem}.article-hero{padding:0 20px}.toc{padding:0 20px}.toc-box{padding:18px 20px}
+      .article-body{padding:28px 20px 48px}.article-body h2{font-size:1.05rem;margin-top:40px}.article-body h3{font-size:.92rem;margin-top:32px}.article-body p{font-size:.86rem}
+      .related-section{padding:0 20px 48px}.share-bar{padding:0 20px 36px}
+      footer{padding:32px 20px}.footer-inner{flex-direction:column;gap:20px;text-align:center}.footer-nav{justify-content:center;gap:18px;flex-wrap:wrap}.footer-copy{text-align:center}
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
+  <header class="header">
     <div class="header-inner">
-      <a href="/" class="logo">DIG<span>BEAUTY</span></a>
-      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()">
-        <span></span>
-      </button>
+      <a href="/" class="logo">DIGBEAUTY</a>
+      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()"><span></span></button>
       <div class="nav-overlay" onclick="toggleNav()"></div>
-      <nav id="mainNav">
-        <a href="/">記事一覧</a>
-        <a href="/#about">DIGBEAUTYとは</a>
-        <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
-      </nav>
+      <nav id="mainNav"><a href="/">Articles</a><a href="/#philosophy">About</a><a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X</a></nav>
     </div>
   </header>
 
-  <!-- ARTICLE HEADER -->
-  <div class="article-header">
-    <p class="breadcrumb">
-      <a href="/">DIGBEAUTY</a>
-      <span class="sep">›</span>
-      <a href="/">ライフスタイル</a>
-    </p>
-    <span class="article-cat-tag">ライフスタイル</span>
+  <div class="article-header reveal">
+    <p class="breadcrumb"><a href="/">DIGBEAUTY</a><span class="sep">›</span><a href="/">ライフスタイル</a></p>
+    <span class="article-cat">ライフスタイル</span>
     <h1 class="article-title">サウナ×美肌の科学 — HSP・血流・自律神経から読み解く</h1>
-    <div class="article-meta">
-      <span>公開：2026.03.05</span>
-      <span>読了目安：10分</span>
-      <span>Text：DIGBEAUTY編集部</span>
-    </div>
+    <div class="article-meta"><span>2026.03.05</span><span>読了目安：10分</span><span>Text：DIGBEAUTY編集部</span></div>
   </div>
 
-  <!-- HERO IMAGE -->
-  <div class="article-hero">
-    <img src="/assets/img/hero-sauna-skin-science.jpg"
-         alt="サウナ×美肌の科学 — HSP・血流・自律神経から読み解く"
-         loading="lazy" width="1200" height="675"
-         style="width:100%; border-radius:var(--radius);">
-  </div>
+  <div class="article-hero reveal reveal-d1"><div class="hero-placeholder">DIGBEAUTY — 05</div></div>
 
-  <!-- TOC -->
-  <div class="toc">
+  <div class="toc reveal reveal-d2">
     <div class="toc-box">
-      <p class="toc-title">— Contents</p>
+      <p class="toc-label">Contents</p>
       <ol class="toc-list">
         <li><a href="#intro">「サウナで肌がきれいになる」は本当か？</a></li>
         <li><a href="#hsp">HSP（ヒートショックプロテイン）と美肌の関係</a></li>
@@ -670,198 +149,85 @@
     </div>
   </div>
 
-  <!-- ARTICLE BODY -->
-  <article class="article-body">
+  <article class="article-body reveal reveal-d3">
 
     <h2 id="intro">「サウナで肌がきれいになる」は本当か？</h2>
-    <p>
-      「サウナに通い始めてから肌の調子がいい」。SNSでもサウナ愛好家からそんな声をよく見かけます。一方で「汗をかくだけで肌がきれいになるわけがない」という懐疑的な意見も根強くあります。
-    </p>
-    <p>
-      結論から言えば、<strong>サウナが肌に良い影響を与えるメカニズムは複数存在し、科学的にも説明がつきます</strong>。ただし「汗でデトックス」のような単純な話ではありません。HSP（ヒートショックプロテイン）の誘導、血流改善によるターンオーバーの促進、自律神経の調整——これらが複合的に作用した結果として、肌のコンディションが整うのです。
-    </p>
-    <p>
-      本記事では、サウナと美肌の関係を科学的な根拠に基づいて解説します。「なんとなく良さそう」ではなく、「なぜ良いのか」を理解することで、サウナの入り方やスキンケアの質も変わってくるはずです。
-    </p>
+    <p>「サウナに通い始めてから肌の調子がいい」。SNSでもサウナ愛好家からそんな声をよく見かけます。一方で「汗をかくだけで肌がきれいになるわけがない」という懐疑的な意見も根強くあります。</p>
+    <p>結論から言えば、<strong>サウナが肌に良い影響を与えるメカニズムは複数存在し、科学的にも説明がつきます</strong>。ただし「汗でデトックス」のような単純な話ではありません。HSP（ヒートショックプロテイン）の誘導、血流改善によるターンオーバーの促進、自律神経の調整——これらが複合的に作用した結果として、肌のコンディションが整うのです。</p>
+    <p>本記事では、サウナと美肌の関係を科学的な根拠に基づいて解説します。「なんとなく良さそう」ではなく、「なぜ良いのか」を理解することで、サウナの入り方やスキンケアの質も変わってくるはずです。</p>
 
     <h2 id="hsp">HSP（ヒートショックプロテイン）と美肌の関係</h2>
-    <p>
-      サウナが肌に与える恩恵のなかで、最も注目すべきはHSP（Heat Shock Protein：ヒートショックプロテイン）の誘導です。HSPとは、細胞が熱や紫外線などのストレスにさらされた際に産生されるタンパク質の総称で、「分子シャペロン」として損傷したタンパク質の修復や正常なフォールディング（折りたたみ）を助ける役割を担います。
-    </p>
-    <p>
-      なかでも<strong>HSP70</strong>は美容領域で特に重要です。HSP70は紫外線やフリーラジカルによって損傷を受けた細胞の修復を促進し、コラーゲンの産生をサポートすることが複数の研究で報告されています。2006年に発表されたKaarniranta らの研究では、HSP70の発現がコラーゲン合成に関与する線維芽細胞の機能維持に寄与することが示されました。
-    </p>
+    <p>サウナが肌に与える恩恵のなかで、最も注目すべきはHSP（Heat Shock Protein：ヒートショックプロテイン）の誘導です。HSPとは、細胞が熱や紫外線などのストレスにさらされた際に産生されるタンパク質の総称で、「分子シャペロン」として損傷したタンパク質の修復や正常なフォールディング（折りたたみ）を助ける役割を担います。</p>
+    <p>なかでも<strong>HSP70</strong>は美容領域で特に重要です。HSP70は紫外線やフリーラジカルによって損傷を受けた細胞の修復を促進し、コラーゲンの産生をサポートすることが複数の研究で報告されています。2006年に発表されたKaarniranta らの研究では、HSP70の発現がコラーゲン合成に関与する線維芽細胞の機能維持に寄与することが示されました。</p>
 
-    <div class="callout">
-      <p class="callout-label">科学メモ：HSP70の誘導条件</p>
-      <p>HSP70は体温が約38〜38.5℃に達した状態を一定時間維持することで効率的に誘導されます。サウナ浴では深部体温がこの範囲まで上昇するため、HSP70産生の条件を満たしやすいのです。ただし、産生のピークは加温後1〜2日後。サウナの翌日〜翌々日にかけて肌の調子が良く感じるのは、このタイムラグで説明できます。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Science Note</p><p>HSP70は体温が約38〜38.5℃に達した状態を一定時間維持することで効率的に誘導されます。サウナ浴では深部体温がこの範囲まで上昇するため、HSP70産生の条件を満たしやすいのです。ただし、産生のピークは加温後1〜2日後。サウナの翌日〜翌々日にかけて肌の調子が良く感じるのは、このタイムラグで説明できます。</p></div>
 
-    <p>
-      また、HSP70にはコラーゲン分解酵素（MMP：マトリックスメタロプロテアーゼ）の活性を抑制する働きがあるとされています。つまり、HSP70は「コラーゲンをつくる」だけでなく「コラーゲンの分解を防ぐ」という二重の効果で肌のハリを維持する可能性があるのです。
-    </p>
+    <p>また、HSP70にはコラーゲン分解酵素（MMP：マトリックスメタロプロテアーゼ）の活性を抑制する働きがあるとされています。つまり、HSP70は「コラーゲンをつくる」だけでなく「コラーゲンの分解を防ぐ」という二重の効果で肌のハリを維持する可能性があるのです。</p>
 
     <h2 id="blood-flow">血流改善効果とターンオーバーの正常化</h2>
-    <p>
-      サウナに入ると、体温上昇に伴い血管が拡張し、血流量が安静時の約2倍にまで増加するとされています。この血流改善は、肌にとって非常に重要な意味を持ちます。
-    </p>
-    <p>
-      皮膚の細胞は、血液を通じて酸素と栄養素を受け取り、新陳代謝を行います。血流が増加すれば、表皮の基底層にある細胞への栄養供給が活発になり、<strong>ターンオーバー（肌の生まれ変わりサイクル）の正常化</strong>が期待できます。ターンオーバーが乱れると、古い角質が肌表面に残ってくすみの原因になったり、バリア機能が低下して乾燥や肌荒れを招いたりします。
-    </p>
-    <p>
-      さらに、血流改善は肌のトーンにも影響します。血行不良は顔色のくすみや目の下のクマの原因になりますが、サウナ浴後には末梢血管まで十分に血液が行き渡るため、肌に健康的な血色が戻ります。これは一時的な効果ですが、習慣的なサウナ浴によって血管の弾力性そのものが改善されれば、日常的な血行も良くなると考えられています。
-    </p>
+    <p>サウナに入ると、体温上昇に伴い血管が拡張し、血流量が安静時の約2倍にまで増加するとされています。この血流改善は、肌にとって非常に重要な意味を持ちます。</p>
+    <p>皮膚の細胞は、血液を通じて酸素と栄養素を受け取り、新陳代謝を行います。血流が増加すれば、表皮の基底層にある細胞への栄養供給が活発になり、<strong>ターンオーバー（肌の生まれ変わりサイクル）の正常化</strong>が期待できます。ターンオーバーが乱れると、古い角質が肌表面に残ってくすみの原因になったり、バリア機能が低下して乾燥や肌荒れを招いたりします。</p>
+    <p>さらに、血流改善は肌のトーンにも影響します。血行不良は顔色のくすみや目の下のクマの原因になりますが、サウナ浴後には末梢血管まで十分に血液が行き渡るため、肌に健康的な血色が戻ります。これは一時的な効果ですが、習慣的なサウナ浴によって血管の弾力性そのものが改善されれば、日常的な血行も良くなると考えられています。</p>
 
-    <div class="callout">
-      <p class="callout-label">補足：毛細血管のゴースト化</p>
-      <p>加齢や生活習慣の乱れにより、末端の毛細血管が消失する「ゴースト血管」が近年注目されています。血流量の低下は栄養不足を意味し、肌老化の一因に。サウナによる定期的な血管拡張トレーニングは、毛細血管の維持に貢献する可能性があります。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Key Point</p><p>加齢や生活習慣の乱れにより、末端の毛細血管が消失する「ゴースト血管」が近年注目されています。血流量の低下は栄養不足を意味し、肌老化の一因に。サウナによる定期的な血管拡張トレーニングは、毛細血管の維持に貢献する可能性があります。</p></div>
 
     <h2 id="autonomic">自律神経のリセットと肌荒れ</h2>
-    <p>
-      サウナ→水風呂→外気浴のサイクルは、自律神経に対して強力なスイッチングを促します。高温のサウナ室では交感神経が優位になり、冷水浴でさらに交感神経が活性化。その後の外気浴（休憩）で一気に副交感神経が優位に切り替わります。この急激な切り替えこそが、いわゆる「ととのう」体験の正体です。
-    </p>
-    <p>
-      この自律神経のリセットが美肌にどう関わるのか。鍵は<strong>コルチゾール</strong>というストレスホルモンにあります。慢性的なストレスはコルチゾールの分泌を持続的に高め、以下の悪影響を肌に及ぼします。
-    </p>
-    <p>
-      <strong>皮脂の過剰分泌。</strong>コルチゾールは皮脂腺を刺激し、ニキビや毛穴の開きの原因になります。<strong>バリア機能の低下。</strong>ストレスはセラミドの産生を阻害し、角層のバリア機能を弱めます。<strong>炎症の促進。</strong>コルチゾールは一時的には抗炎症作用を持ちますが、慢性的に高値が続くと逆に炎症性サイトカインの産生が増加します。
-    </p>
-    <p>
-      サウナ浴後にはコルチゾール値が有意に低下するという報告があり、Pilch らの2013年の研究では、サウナ浴後の血中コルチゾール濃度の減少が確認されています。定期的なサウナ習慣によってストレス応答が適切にリセットされれば、ストレス由来の肌荒れを軽減できる可能性があるのです。
-    </p>
+    <p>サウナ→水風呂→外気浴のサイクルは、自律神経に対して強力なスイッチングを促します。高温のサウナ室では交感神経が優位になり、冷水浴でさらに交感神経が活性化。その後の外気浴（休憩）で一気に副交感神経が優位に切り替わります。この急激な切り替えこそが、いわゆる「ととのう」体験の正体です。</p>
+    <p>この自律神経のリセットが美肌にどう関わるのか。鍵は<strong>コルチゾール</strong>というストレスホルモンにあります。慢性的なストレスはコルチゾールの分泌を持続的に高め、以下の悪影響を肌に及ぼします。</p>
+    <p><strong>皮脂の過剰分泌。</strong>コルチゾールは皮脂腺を刺激し、ニキビや毛穴の開きの原因になります。<strong>バリア機能の低下。</strong>ストレスはセラミドの産生を阻害し、角層のバリア機能を弱めます。<strong>炎症の促進。</strong>コルチゾールは一時的には抗炎症作用を持ちますが、慢性的に高値が続くと逆に炎症性サイトカインの産生が増加します。</p>
+    <p>サウナ浴後にはコルチゾール値が有意に低下するという報告があり、Pilch らの2013年の研究では、サウナ浴後の血中コルチゾール濃度の減少が確認されています。定期的なサウナ習慣によってストレス応答が適切にリセットされれば、ストレス由来の肌荒れを軽減できる可能性があるのです。</p>
 
     <h2 id="sweat-truth">発汗と老廃物排出の真実</h2>
-    <p>
-      「サウナで汗をかいてデトックス」——この表現は非常に広く使われていますが、科学的には大きな誤解を含んでいます。正確に理解しておきましょう。
-    </p>
-    <p>
-      汗の成分の<strong>約99%は水分</strong>です。残りの約1%にナトリウム、カリウム、乳酸、尿素などが含まれますが、いわゆる「毒素」や重金属の排出量は極めて微量です。2012年に発表されたGenuis らの研究では、汗中にBPA（ビスフェノールA）や一部の重金属が検出されたものの、その排出量は腎臓（尿）や肝臓による代謝・排出と比較するとごくわずかであると結論づけています。
-    </p>
+    <p>「サウナで汗をかいてデトックス」——この表現は非常に広く使われていますが、科学的には大きな誤解を含んでいます。正確に理解しておきましょう。</p>
+    <p>汗の成分の<strong>約99%は水分</strong>です。残りの約1%にナトリウム、カリウム、乳酸、尿素などが含まれますが、いわゆる「毒素」や重金属の排出量は極めて微量です。2012年に発表されたGenuis らの研究では、汗中にBPA（ビスフェノールA）や一部の重金属が検出されたものの、その排出量は腎臓（尿）や肝臓による代謝・排出と比較するとごくわずかであると結論づけています。</p>
 
-    <div class="callout">
-      <p class="callout-label">正しい理解</p>
-      <p>「汗でデトックス」は過大な表現です。体内の老廃物排出の主役はあくまで肝臓と腎臓。サウナの美肌効果は、発汗による老廃物排出ではなく、前述のHSP誘導・血流改善・自律神経調整によるところが大きいのです。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Caution</p><p>「汗でデトックス」は過大な表現です。体内の老廃物排出の主役はあくまで肝臓と腎臓。サウナの美肌効果は、発汗による老廃物排出ではなく、前述のHSP誘導・血流改善・自律神経調整によるところが大きいのです。</p></div>
 
-    <p>
-      ただし、発汗に全く意味がないわけではありません。汗腺が正常に機能し、質の良い汗（サラサラとした薄い汗）をかけるようになることは、体温調節機能の維持に重要です。また、汗にはダームシジン由来の抗菌ペプチドが含まれており、皮膚表面の常在菌バランスの維持に一定の役割を果たしています。
-    </p>
+    <p>ただし、発汗に全く意味がないわけではありません。汗腺が正常に機能し、質の良い汗（サラサラとした薄い汗）をかけるようになることは、体温調節機能の維持に重要です。また、汗にはダームシジン由来の抗菌ペプチドが含まれており、皮膚表面の常在菌バランスの維持に一定の役割を果たしています。</p>
 
     <h2 id="protocol">美肌のためのサウナの入り方</h2>
-    <p>
-      サウナの美肌効果を最大限に引き出すには、ただ長時間耐えればいいわけではありません。以下のプロトコルを目安にしてください。
-    </p>
+    <p>サウナの美肌効果を最大限に引き出すには、ただ長時間耐えればいいわけではありません。以下のプロトコルを目安にしてください。</p>
 
     <h3><span class="num">01</span>サウナ室：80〜90℃ / 8〜12分</h3>
-    <p>
-      深部体温を38℃付近まで上げるのが目標です。高温サウナ（90℃以上）で短時間よりも、中温（80〜90℃）でじっくり温まるほうがHSP誘導には効果的とされます。脈拍が平常時の2倍程度になったら退室の目安です。無理は禁物——めまいや気分不良を感じたらすぐに出ましょう。
-    </p>
+    <p>深部体温を38℃付近まで上げるのが目標です。高温サウナ（90℃以上）で短時間よりも、中温（80〜90℃）でじっくり温まるほうがHSP誘導には効果的とされます。脈拍が平常時の2倍程度になったら退室の目安です。無理は禁物——めまいや気分不良を感じたらすぐに出ましょう。</p>
 
     <h3><span class="num">02</span>水風呂：16〜18℃ / 1〜2分</h3>
-    <p>
-      サウナ室から出たら、まずかけ湯で汗を流してから水風呂に入ります。温度は16〜18℃が一般的ですが、慣れていない方は手足に水をかけるところから始めてください。冷水刺激が血管を収縮させ、その後の外気浴での副交感神経への切り替えを鮮明にします。
-    </p>
+    <p>サウナ室から出たら、まずかけ湯で汗を流してから水風呂に入ります。温度は16〜18℃が一般的ですが、慣れていない方は手足に水をかけるところから始めてください。冷水刺激が血管を収縮させ、その後の外気浴での副交感神経への切り替えを鮮明にします。</p>
 
     <h3><span class="num">03</span>外気浴（休憩）：5〜10分</h3>
-    <p>
-      ここが最も重要なステップです。水風呂後にリクライニングチェアや椅子に座り、外気に身を委ねます。副交感神経が優位に切り替わり、深いリラクゼーション状態に入ります。この時間にこそ、自律神経のリセットとコルチゾール低下が起こるのです。
-    </p>
+    <p>ここが最も重要なステップです。水風呂後にリクライニングチェアや椅子に座り、外気に身を委ねます。副交感神経が優位に切り替わり、深いリラクゼーション状態に入ります。この時間にこそ、自律神経のリセットとコルチゾール低下が起こるのです。</p>
 
-    <div class="callout">
-      <p class="callout-label">実践のポイント</p>
-      <p>このサイクルを<strong>2〜3セット</strong>繰り返すのが一般的です。頻度は<strong>週2〜3回</strong>が目安。毎日の入浴は肌の乾燥リスクが高まるため、休息日を設けましょう。また、サウナ前には十分な水分補給を。脱水状態は血液粘度を上げ、血流改善の効果を相殺してしまいます。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Practical Tip</p><p>このサイクルを<strong>2〜3セット</strong>繰り返すのが一般的です。頻度は<strong>週2〜3回</strong>が目安。毎日の入浴は肌の乾燥リスクが高まるため、休息日を設けましょう。また、サウナ前には十分な水分補給を。脱水状態は血液粘度を上げ、血流改善の効果を相殺してしまいます。</p></div>
 
     <h2 id="aftercare">サウナ後のスキンケア</h2>
-    <p>
-      サウナの美肌効果を台なしにしてしまう最大の落とし穴が、<strong>入浴後の乾燥</strong>です。サウナ浴中は大量に発汗するため、肌表面の水分が急速に蒸発します。さらに、高温環境では角層の細胞間脂質（セラミドなど）が流動化し、バリア機能が一時的に低下します。
-    </p>
-    <p>
-      そのため、サウナ後は<strong>できるだけ早く保湿する</strong>ことが重要です。理想は脱衣所に出てから10分以内。化粧水で水分を補い、乳液やクリームで蓋をする基本のステップを丁寧に行いましょう。
-    </p>
-    <p>
-      特にサウナ後におすすめの成分は以下の通りです。<strong>セラミド</strong>——バリア機能の回復を助けます。<strong>ヒアルロン酸</strong>——水分保持力が高く、蒸発した水分を補います。<strong>ワセリンやスクワラン</strong>——蓋としての役割が高く、水分の再蒸発を防ぎます。
-    </p>
+    <p>サウナの美肌効果を台なしにしてしまう最大の落とし穴が、<strong>入浴後の乾燥</strong>です。サウナ浴中は大量に発汗するため、肌表面の水分が急速に蒸発します。さらに、高温環境では角層の細胞間脂質（セラミドなど）が流動化し、バリア機能が一時的に低下します。</p>
+    <p>そのため、サウナ後は<strong>できるだけ早く保湿する</strong>ことが重要です。理想は脱衣所に出てから10分以内。化粧水で水分を補い、乳液やクリームで蓋をする基本のステップを丁寧に行いましょう。</p>
+    <p>特にサウナ後におすすめの成分は以下の通りです。<strong>セラミド</strong>——バリア機能の回復を助けます。<strong>ヒアルロン酸</strong>——水分保持力が高く、蒸発した水分を補います。<strong>ワセリンやスクワラン</strong>——蓋としての役割が高く、水分の再蒸発を防ぎます。</p>
 
-    <div class="callout">
-      <p class="callout-label">注意</p>
-      <p>サウナ直後にピーリングやレチノール配合の化粧品を使うのは避けましょう。バリア機能が一時的に低下している状態では、刺激成分が過剰に浸透し、赤みやヒリつきの原因になります。攻めのケアは別の日に行い、サウナ後は「守りの保湿」に徹するのがベストです。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Caution</p><p>サウナ直後にピーリングやレチノール配合の化粧品を使うのは避けましょう。バリア機能が一時的に低下している状態では、刺激成分が過剰に浸透し、赤みやヒリつきの原因になります。攻めのケアは別の日に行い、サウナ後は「守りの保湿」に徹するのがベストです。</p></div>
 
     <h2 id="summary">まとめ</h2>
-    <p>
-      サウナが美肌に良いとされる理由は、「汗でデトックス」のような単純な話ではなく、<strong>HSP70の誘導によるコラーゲン産生の促進と細胞修復</strong>、<strong>血流改善によるターンオーバーの正常化</strong>、<strong>自律神経のリセットによるストレスホルモンの低減</strong>という3つの科学的メカニズムが複合的に作用した結果です。
-    </p>
-    <p>
-      一方で、サウナ後の肌は乾燥しやすい状態にあるため、入浴後の速やかな保湿ケアが不可欠です。また、発汗によるデトックス効果は過大評価されがちであり、正しい知識を持ったうえでサウナを楽しむことが大切です。
-    </p>
-    <p>
-      適切な温度・時間・頻度を守り、アフターケアを怠らなければ、サウナは美肌づくりの優れた習慣になり得ます。科学を味方につけて、サウナライフをより実りあるものにしていきましょう。
-    </p>
+    <p>サウナが美肌に良いとされる理由は、「汗でデトックス」のような単純な話ではなく、<strong>HSP70の誘導によるコラーゲン産生の促進と細胞修復</strong>、<strong>血流改善によるターンオーバーの正常化</strong>、<strong>自律神経のリセットによるストレスホルモンの低減</strong>という3つの科学的メカニズムが複合的に作用した結果です。</p>
+    <p>一方で、サウナ後の肌は乾燥しやすい状態にあるため、入浴後の速やかな保湿ケアが不可欠です。また、発汗によるデトックス効果は過大評価されがちであり、正しい知識を持ったうえでサウナを楽しむことが大切です。</p>
+    <p>適切な温度・時間・頻度を守り、アフターケアを怠らなければ、サウナは美肌づくりの優れた習慣になり得ます。科学を味方につけて、サウナライフをより実りあるものにしていきましょう。</p>
   </article>
 
-  <!-- SHARE -->
-  <div class="share-bar">
-    <p>この記事をシェアする</p>
-    <div class="share-buttons">
-      <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://beauty.plucksworld.com/articles/sauna-skin-science.html&text=%E3%82%B5%E3%82%A6%E3%83%8A%C3%97%E7%BE%8E%E8%82%8C%E3%81%AE%E7%A7%91%E5%AD%A6%20%E2%80%94%20HSP%E3%83%BB%E8%A1%80%E6%B5%81%E3%83%BB%E8%87%AA%E5%BE%8B%E7%A5%9E%E7%B5%8C%E3%81%8B%E3%82%89%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F%20%7C%20DIGBEAUTY&utm_source=twitter&utm_medium=social&utm_campaign=launch&utm_content=05_sauna" target="_blank" rel="noopener">Xでシェア</a>
-      <a class="share-btn" href="#" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>{this.textContent='URLをコピー'},2000);return false;">URLをコピー</a>
-    </div>
-  </div>
+  <div class="share-bar"><p>この記事をシェアする</p><div class="share-buttons"><a class="share-btn" href="https://twitter.com/intent/tweet?url=https://digbeauty.plucksworld.com/articles/sauna-skin-science.html&text=%E3%82%B5%E3%82%A6%E3%83%8A%C3%97%E7%BE%8E%E8%82%8C%E3%81%AE%E7%A7%91%E5%AD%A6%20%E2%80%94%20HSP%E3%83%BB%E8%A1%80%E6%B5%81%E3%83%BB%E8%87%AA%E5%BE%8B%E7%A5%9E%E7%B5%8C%E3%81%8B%E3%82%89%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F%20%7C%20DIGBEAUTY&utm_source=twitter&utm_medium=social&utm_campaign=launch&utm_content=05_sauna" target="_blank" rel="noopener">Xでシェア</a><a class="share-btn" href="#" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>{this.textContent='URLをコピー'},2000);return false;">URLをコピー</a></div></div>
 
-  <!-- RELATED -->
   <section class="related-section">
-    <p class="section-label">— Related Articles</p>
+    <p class="related-label">Related Articles</p>
     <div class="related-list">
-      <a class="related-link" href="/articles/moisturizer-under-1000yen.html">
-        <span class="related-num">01</span>
-        <div class="related-info">
-          <span class="related-cat">発掘レビュー</span>
-          <p class="related-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</p>
-        </div>
-      </a>
-      <a class="related-link" href="/articles/sunscreen-ingredients.html">
-        <span class="related-num">03</span>
-        <div class="related-info">
-          <span class="related-cat">成分辞典</span>
-          <p class="related-title">日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤</p>
-        </div>
-      </a>
-      <a class="related-link" href="/articles/hall-of-fame-items.html">
-        <span class="related-num">06</span>
-        <div class="related-info">
-          <span class="related-cat">発掘レビュー</span>
-          <p class="related-title">美容のプロが自腹で買い続ける「殿堂入りアイテム」10選</p>
-        </div>
-      </a>
+      <a class="related-link" href="/articles/moisturizer-under-1000yen.html"><span class="related-num">01</span><div><span class="related-cat">発掘レビュー</span><p class="related-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</p></div></a>
+      <a class="related-link" href="/articles/sunscreen-ingredients.html"><span class="related-num">03</span><div><span class="related-cat">成分辞典</span><p class="related-title">日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤</p></div></a>
+      <a class="related-link" href="/articles/hall-of-fame-items.html"><span class="related-num">06</span><div><span class="related-cat">発掘レビュー</span><p class="related-title">美容のプロが自腹で買い続ける「殿堂入りアイテム」10選</p></div></a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-brand">DIGBEAUTY — 美を、掘り当てろ。</div>
-    <div class="footer-links">
-      <a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a>
-      <a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a>
-      <a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a>
-      <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
-    </div>
+    <div class="footer-inner"><div class="footer-logo">DIGBEAUTY</div><nav class="footer-nav"><a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a><a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a><a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a><a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X</a></nav></div>
     <p class="footer-copy">&copy; 2026 plucks world</p>
   </footer>
 
-  <script>
-    function toggleNav() {
-      document.getElementById('mainNav').classList.toggle('open');
-      document.querySelector('.nav-toggle').classList.toggle('active');
-      document.querySelector('.nav-overlay').classList.toggle('show');
-    }
-    document.querySelectorAll('#mainNav a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        if (window.innerWidth <= 600) toggleNav();
-      });
-    });
-  </script>
-
+  <script>function toggleNav(){document.getElementById('mainNav').classList.toggle('open');document.querySelector('.nav-toggle').classList.toggle('active');document.querySelector('.nav-overlay').classList.toggle('show')}document.querySelectorAll('#mainNav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=600)toggleNav()}))</script>
 </body>
 </html>

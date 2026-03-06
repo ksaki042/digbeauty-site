@@ -5,658 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤 | DIGBEAUTY</title>
   <meta name="description" content="SPF・PAだけで日焼け止めを選んでいませんか？紫外線吸収剤と散乱剤の違い、成分表示の読み方を徹底解説。肌質別の選び方も紹介。">
-
-  <!-- Favicon / Touch Icons -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#2D6A4F">
-
-  <!-- OGP -->
+  <meta name="theme-color" content="#3D5A47">
   <meta property="og:title" content="日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤">
   <meta property="og:description" content="SPF・PAだけで日焼け止めを選んでいませんか？紫外線吸収剤と散乱剤の違い、成分表示の読み方を徹底解説。肌質別の選び方も紹介。">
-  <meta property="og:url" content="https://beauty.plucksworld.com/articles/sunscreen-ingredients.html">
-  <meta property="og:image" content="https://beauty.plucksworld.com/assets/ogp-sunscreen-ingredients.png">
+  <meta property="og:url" content="https://digbeauty.plucksworld.com/articles/sunscreen-ingredients.html">
+  <meta property="og:image" content="https://digbeauty.plucksworld.com/assets/ogp-sunscreen-ingredients.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="DIGBEAUTY">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@digbeauty">
-
-  <!-- Google Search Console verification (placeholder) -->
-  <!-- <meta name="google-site-verification" content="XXXXXXXXXX"> -->
-
-  <!-- GA4 (placeholder — 測定ID差し替え) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
-
-  <!-- Fonts -->
+  <!-- GA4 placeholder -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Noto+Serif+JP:wght@200;300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 
   <style>
-    /* =============================================
-       DIGBEAUTY — Article Template CSS
-       ============================================= */
-
     :root {
-      --bg: #FAFAF8;
-      --bg-card: #FFFFFF;
-      --text: #1A1A1A;
-      --text-mid: #4A4A4A;
-      --text-sub: #6B6B6B;
-      --text-faint: #9A9A9A;
-      --accent: #2D6A4F;
-      --accent-light: #D8F3DC;
-      --accent-dark: #1B4332;
-      --accent-mid: #40916C;
-      --border: #E8E6E1;
-      --border-light: #F0EDE8;
-      --tag-bg: #F0EDE8;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
-      --mono: 'JetBrains Mono', 'SF Mono', monospace;
-      --article-w: 700px;
-      --radius: 6px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
-      --shadow-md: 0 8px 24px rgba(0,0,0,0.06);
-      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --ivory:#F7F5F1;--cream:#F0EDE7;--sand:#E4DFD7;--warm-bg:#EDE8E0;--white:#FDFCFA;
+      --ink:#1C1C1C;--ink-soft:#3A3A3A;--ink-muted:#6B6864;--ink-faint:#A8A29E;
+      --sage:#3D5A47;--sage-muted:#5A7A62;--sage-light:#C8D5C0;--sage-wash:#E8EFE6;
+      --gold:#9A8460;--gold-light:#D4C8B0;
+      --line:#DDD8D0;--line-light:#EAE6DF;
+      --display:'Playfair Display',Georgia,serif;
+      --serif-jp:'Noto Serif JP','Yu Mincho',serif;
+      --sans:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+      --serif-en:'Source Serif 4',Georgia,serif;
+      --article-w:680px;
+      --ease:cubic-bezier(.25,.1,.25,1);
+      --ease-out:cubic-bezier(0,0,.2,1);
     }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{font-size:16px;scroll-behavior:smooth}
+    body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--ivory);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:10000;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");background-size:512px}
+    img{max-width:100%;height:auto;display:block}a{color:inherit}
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-size: 16px; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    body {
-      font-family: var(--sans);
-      font-weight: 300;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.9;
-      letter-spacing: 0.02em;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; }
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{animation:fadeUp .8s var(--ease-out) both}.reveal-d1{animation-delay:.12s}.reveal-d2{animation-delay:.24s}.reveal-d3{animation-delay:.36s}
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    /* HEADER */
+    .header{position:sticky;top:0;z-index:200;background:rgba(247,245,241,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    .header-inner{max-width:1120px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line-light)}
+    .logo{font-family:var(--display);font-size:1.15rem;font-weight:500;letter-spacing:.18em;color:var(--ink);text-decoration:none;transition:opacity .3s}.logo:hover{opacity:.6}
+    nav{display:flex;gap:6px;align-items:center}nav a{font-size:.73rem;font-weight:400;letter-spacing:.05em;color:var(--ink-muted);text-decoration:none;padding:8px 14px;border-radius:100px;transition:all .3s var(--ease)}nav a:hover{color:var(--sage);background:var(--sage-wash)}
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;width:32px;height:32px;position:relative;z-index:210}.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{display:block;width:18px;height:1px;background:var(--ink);transition:all .35s var(--ease);position:absolute;left:7px}.nav-toggle span{top:15px}.nav-toggle span::before{content:'';top:-7px}.nav-toggle span::after{content:'';top:7px}.nav-toggle.active span{background:transparent}.nav-toggle.active span::before{top:0;transform:rotate(45deg)}.nav-toggle.active span::after{top:0;transform:rotate(-45deg)}
+    .nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.15);z-index:199;backdrop-filter:blur(3px)}.nav-overlay.show{display:block}
 
-    /* ===== HEADER ===== */
-    .site-header {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(250,250,248,0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-light);
-    }
-    .header-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      font-family: var(--serif);
-      font-size: 1.45rem;
-      font-weight: 600;
-      color: var(--text);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      transition: opacity var(--transition);
-    }
-    .logo:hover { opacity: 0.7; }
-    .logo span { color: var(--accent); }
+    /* ARTICLE HEADER */
+    .article-header{max-width:var(--article-w);margin:0 auto;padding:56px 24px 0}
+    .breadcrumb{font-size:.7rem;color:var(--ink-faint);margin-bottom:24px}.breadcrumb a{color:var(--ink-muted);text-decoration:none;transition:color .3s}.breadcrumb a:hover{color:var(--sage)}.breadcrumb .sep{margin:0 6px;color:var(--line)}
+    .article-cat{display:inline-block;font-size:.62rem;font-weight:500;letter-spacing:.1em;color:var(--sage);background:var(--sage-wash);padding:4px 14px;border-radius:100px;margin-bottom:16px}
+    .article-title{font-family:var(--serif-jp);font-size:clamp(1.35rem,3.8vw,1.75rem);font-weight:500;line-height:1.6;letter-spacing:.02em;margin-bottom:20px}
+    .article-meta{font-size:.7rem;color:var(--ink-faint);display:flex;gap:16px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid var(--line)}
 
-    .nav-toggle {
-      display: none;
-      background: none; border: none; cursor: pointer;
-      width: 28px; height: 28px; position: relative; z-index: 110;
-    }
-    .nav-toggle span,
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-      display: block; width: 20px; height: 1.5px;
-      background: var(--text); transition: all 0.3s;
-      position: absolute; left: 4px;
-    }
-    .nav-toggle span { top: 13px; }
-    .nav-toggle span::before { content: ''; top: -6px; }
-    .nav-toggle span::after { content: ''; top: 6px; }
-    .nav-toggle.active span { background: transparent; }
-    .nav-toggle.active span::before { top: 0; transform: rotate(45deg); }
-    .nav-toggle.active span::after { top: 0; transform: rotate(-45deg); }
+    /* Hero image */
+    .article-hero{max-width:var(--article-w);margin:32px auto 0;padding:0 24px}
+    .hero-placeholder{width:100%;aspect-ratio:16/9;background:linear-gradient(145deg,#DDD4CA 0%,#D0C4B8 40%,#C8D5C0 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.1rem;font-style:italic;color:rgba(255,255,255,.5)}
 
-    nav { display: flex; align-items: center; gap: 4px; }
-    nav a {
-      font-size: 0.78rem; font-weight: 400; color: var(--text-sub);
-      text-decoration: none; padding: 6px 12px; border-radius: 4px;
-      letter-spacing: 0.04em; transition: color var(--transition), background var(--transition);
-    }
-    nav a:hover { color: var(--accent); background: var(--accent-light); }
+    /* TOC */
+    .toc{max-width:var(--article-w);margin:32px auto 0;padding:0 24px}
+    .toc-box{background:var(--white);border:1px solid var(--line-light);border-radius:8px;padding:24px 28px}
+    .toc-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px}
+    .toc-list{list-style:none;counter-reset:toc}.toc-list li{counter-increment:toc;margin-bottom:5px}.toc-list li a{font-size:.82rem;color:var(--ink-soft);text-decoration:none;display:flex;align-items:baseline;gap:10px;padding:4px 0;transition:color .3s}.toc-list li a::before{content:counter(toc,decimal-leading-zero);font-family:var(--display);font-style:italic;font-size:.72rem;color:var(--ink-faint);min-width:22px}.toc-list li a:hover{color:var(--sage)}
 
-    /* ===== ARTICLE HEADER ===== */
-    .article-header {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 48px 24px 0;
-      animation: fadeUp 0.7s ease-out both;
-    }
-    .breadcrumb {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      margin-bottom: 20px;
-    }
-    .breadcrumb a {
-      color: var(--text-sub);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-    .breadcrumb a:hover { color: var(--accent); }
-    .breadcrumb .sep { margin: 0 6px; color: var(--border); }
-    .article-cat-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 4px 14px;
-      border-radius: 100px;
-      letter-spacing: 0.06em;
-      margin-bottom: 14px;
-    }
-    .article-title {
-      font-size: clamp(1.35rem, 4vw, 1.85rem);
-      font-weight: 700;
-      line-height: 1.5;
-      letter-spacing: 0.01em;
-      margin-bottom: 16px;
-    }
-    .article-meta {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-    }
+    /* ARTICLE BODY */
+    .article-body{max-width:var(--article-w);margin:0 auto;padding:40px 24px 72px}
+    .article-body h2{font-family:var(--serif-jp);font-size:1.15rem;font-weight:500;margin:56px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line);line-height:1.6;letter-spacing:.02em}.article-body h2:first-child{margin-top:0}
+    .article-body h3{font-size:1rem;font-weight:500;margin:40px 0 14px;display:flex;align-items:center;gap:10px;line-height:1.5}
+    .article-body h3 .num{font-family:var(--display);font-size:.78rem;font-style:italic;color:var(--sage);background:var(--sage-wash);padding:2px 10px;border-radius:100px}
+    .article-body p{margin-bottom:22px;font-size:.9rem;line-height:2}.article-body strong{font-weight:500;color:var(--ink)}
 
-    /* Hero image area */
-    .article-hero {
-      max-width: var(--article-w);
-      margin: 28px auto 0;
-      padding: 0 24px;
-      animation: fadeUp 0.7s 0.12s ease-out both;
-    }
-    .article-hero .hero-placeholder {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 50%, #e8e3dc 100%);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--accent);
-      opacity: 0.45;
-    }
+    /* Callout */
+    .callout{background:var(--sage-wash);border-radius:8px;padding:20px 24px;margin:24px 0 28px;font-size:.85rem;line-height:1.9;position:relative}.callout::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px;background:var(--sage);border-radius:3px 0 0 3px}
+    .callout-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
 
-    /* ===== TOC ===== */
-    .toc {
-      max-width: var(--article-w);
-      margin: 32px auto 0;
-      padding: 0 24px;
-      animation: fadeUp 0.7s 0.2s ease-out both;
-    }
-    .toc-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-    }
-    .toc-title {
-      font-size: 0.72rem;
-      font-family: var(--mono);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    .toc-list {
-      list-style: none;
-      counter-reset: toc;
-    }
-    .toc-list li {
-      counter-increment: toc;
-      margin-bottom: 6px;
-    }
-    .toc-list li a {
-      font-size: 0.82rem;
-      color: var(--text-mid);
-      text-decoration: none;
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      transition: color var(--transition);
-    }
-    .toc-list li a::before {
-      content: counter(toc, decimal-leading-zero);
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      color: var(--text-faint);
-      min-width: 20px;
-    }
-    .toc-list li a:hover { color: var(--accent); }
+    /* PRODUCT CARD */
+    .product-card{background:var(--white);border:1px solid var(--line-light);border-radius:8px;margin:18px 0 40px;overflow:hidden;transition:box-shadow .3s var(--ease)}.product-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.04)}
+    .product-header{background:linear-gradient(135deg,var(--gold-light) 0%,var(--warm-bg) 100%);padding:22px 28px 18px;position:relative}.product-header::after{content:'';position:absolute;bottom:0;left:28px;right:28px;height:1px;background:rgba(0,0,0,.05)}
+    .product-name{font-family:var(--serif-jp);font-size:1rem;font-weight:500;margin-bottom:2px}.product-brand{font-size:.75rem;color:var(--ink-muted)}
+    .product-body{padding:22px 28px 28px}
+    .product-price{display:inline-block;font-family:var(--serif-en);font-size:.82rem;font-weight:400;color:var(--sage);background:var(--sage-wash);padding:4px 14px;border-radius:100px;margin-bottom:18px}
+    .ingredient-box{background:var(--warm-bg);border-radius:6px;padding:16px 20px;margin:0 0 18px;font-size:.82rem;line-height:1.8}.ingredient-box .label{font-family:var(--serif-en);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+    .product-desc{font-size:.87rem;line-height:1.95;margin-bottom:18px}
+    .ratings{margin-bottom:18px}.rating-row{display:flex;align-items:center;gap:10px;font-size:.73rem;color:var(--ink-muted);margin-bottom:6px}.rating-label{min-width:60px;text-align:right}.rating-bar{flex:1;height:4px;background:var(--line-light);border-radius:2px;overflow:hidden;max-width:140px}.rating-bar-fill{height:100%;background:linear-gradient(90deg,var(--sage-light),var(--sage));border-radius:2px}.rating-score{font-family:var(--serif-en);font-size:.7rem;min-width:42px;color:var(--ink-muted)}
+    .buy-section{padding-top:16px;border-top:1px solid var(--line-light)}.buy-title{font-family:var(--serif-en);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}.buy-links{display:flex;gap:8px;flex-wrap:wrap}.buy-link{font-size:.7rem;padding:5px 14px;border:1px solid var(--sage);border-radius:100px;color:var(--sage);text-decoration:none;transition:all .3s var(--ease)}.buy-link:hover{background:var(--sage);color:#fff}
 
-    /* ===== ARTICLE BODY ===== */
-    .article-body {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 36px 24px 64px;
-      animation: fadeUp 0.7s 0.28s ease-out both;
-    }
-    .article-body h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin: 48px 0 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--accent-light);
-      line-height: 1.55;
-    }
-    .article-body h2:first-child { margin-top: 0; }
-    .article-body h3 {
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin: 36px 0 12px;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .article-body h3 .num {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-    .article-body p {
-      margin-bottom: 20px;
-      font-size: 0.92rem;
-    }
-    .article-body strong {
-      font-weight: 500;
-      color: var(--text);
-    }
+    /* SHARE */
+    .share-bar{max-width:var(--article-w);margin:0 auto;padding:0 24px 48px;text-align:center}.share-bar p{font-size:.7rem;color:var(--ink-faint);margin-bottom:12px}.share-buttons{display:flex;gap:10px;justify-content:center}.share-btn{font-size:.7rem;padding:8px 22px;border:1px solid var(--line);border-radius:100px;color:var(--ink-muted);text-decoration:none;transition:all .3s var(--ease)}.share-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 
-    /* Callout / Note */
-    .callout {
-      background: var(--accent-light);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 16px 20px;
-      margin: 20px 0 24px;
-      font-size: 0.85rem;
-      line-height: 1.8;
-    }
-    .callout .callout-label {
-      font-weight: 500;
-      font-size: 0.72rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      margin-bottom: 4px;
-    }
+    /* RELATED */
+    .related-section{max-width:var(--article-w);margin:0 auto;padding:0 24px 80px}
+    .related-label{font-family:var(--serif-en);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:16px}
+    .related-list{display:flex;flex-direction:column;gap:10px}.related-link{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--white);border:1px solid var(--line-light);border-radius:8px;text-decoration:none;color:inherit;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}.related-link:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(0,0,0,.04)}
+    .related-num{font-family:var(--display);font-size:1.2rem;font-style:italic;color:var(--ink-faint);min-width:30px;text-align:center}.related-cat{font-size:.6rem;color:var(--sage);letter-spacing:.06em}.related-title{font-size:.85rem;font-weight:400;line-height:1.55}
 
-    /* ===== PRODUCT CARD ===== */
-    .product-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      margin: 16px 0 36px;
-      overflow: hidden;
-    }
-    .product-card-header {
-      background: linear-gradient(135deg, var(--accent-light) 0%, #f5f0eb 100%);
-      padding: 20px 24px 16px;
-    }
-    .product-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-    .product-brand {
-      font-size: 0.78rem;
-      color: var(--text-sub);
-    }
-    .product-card-body {
-      padding: 20px 24px 24px;
-    }
-    .product-price {
-      display: inline-block;
-      font-family: var(--mono);
-      font-size: 0.82rem;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 3px 12px;
-      border-radius: 4px;
-      margin-bottom: 16px;
-    }
+    /* FOOTER */
+    footer{background:var(--ivory);border-top:1px solid var(--line);padding:44px 32px}
+    .footer-inner{max-width:1120px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+    .footer-logo{font-family:var(--display);font-size:.95rem;font-weight:500;letter-spacing:.18em;color:var(--ink-muted)}
+    .footer-nav{display:flex;gap:28px}.footer-nav a{font-size:.7rem;color:var(--ink-faint);text-decoration:none;transition:color .3s}.footer-nav a:hover{color:var(--sage)}
+    .footer-copy{max-width:1120px;margin:20px auto 0;font-size:.62rem;color:var(--ink-faint);opacity:.6}
 
-    /* Ingredient box */
-    .ingredient-box {
-      background: var(--tag-bg);
-      border-radius: var(--radius);
-      padding: 14px 18px;
-      margin: 0 0 16px;
-      font-size: 0.82rem;
-      line-height: 1.75;
-    }
-    .ingredient-box .label {
-      font-weight: 500;
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
-
-    /* Product description */
-    .product-desc {
-      font-size: 0.88rem;
-      line-height: 1.85;
-      margin-bottom: 16px;
-    }
-
-    /* Rating */
-    .ratings {
-      margin-bottom: 16px;
-    }
-    .rating-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.75rem;
-      color: var(--text-sub);
-      margin-bottom: 6px;
-    }
-    .rating-label {
-      min-width: 64px;
-      text-align: right;
-    }
-    .rating-bar {
-      flex: 1;
-      height: 5px;
-      background: var(--border-light);
-      border-radius: 3px;
-      overflow: hidden;
-      max-width: 140px;
-    }
-    .rating-bar-fill {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 3px;
-      transition: width 0.6s ease-out;
-    }
-    .rating-score {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      min-width: 40px;
-    }
-
-    /* Buy links */
-    .buy-section {
-      padding-top: 14px;
-      border-top: 1px solid var(--border-light);
-    }
-    .buy-title {
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--text-faint);
-      letter-spacing: 0.06em;
-      margin-bottom: 8px;
-    }
-    .buy-links {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .buy-link {
-      font-size: 0.72rem;
-      font-weight: 400;
-      padding: 5px 14px;
-      border: 1px solid var(--accent);
-      border-radius: 100px;
-      color: var(--accent);
-      text-decoration: none;
-      transition: all var(--transition);
-    }
-    .buy-link:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    /* ===== RELATED ARTICLES ===== */
-    .related-section {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-    .related-section .section-label {
-      font-family: var(--mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    .related-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .related-link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 16px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius);
-      text-decoration: none;
-      color: inherit;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-    .related-link:hover {
-      transform: translateX(4px);
-      box-shadow: var(--shadow-md);
-    }
-    .related-num {
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--accent);
-      opacity: 0.35;
-      min-width: 32px;
-      text-align: center;
-    }
-    .related-info .related-cat {
-      font-size: 0.65rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-    }
-    .related-info .related-title {
-      font-size: 0.85rem;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-
-    /* ===== SHARE BAR (sticky on mobile) ===== */
-    .share-bar {
-      max-width: var(--article-w);
-      margin: 0 auto;
-      padding: 0 24px 48px;
-      text-align: center;
-    }
-    .share-bar p {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      margin-bottom: 10px;
-    }
-    .share-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
-    .share-btn {
-      font-size: 0.72rem;
-      font-weight: 400;
-      padding: 8px 20px;
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      color: var(--text-sub);
-      text-decoration: none;
-      transition: all var(--transition);
-    }
-    .share-btn:hover {
-      background: var(--text);
-      color: #fff;
-      border-color: var(--text);
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 36px 24px;
-      text-align: center;
-    }
-    .footer-brand {
-      font-family: var(--serif);
-      font-size: 0.9rem;
-      color: var(--text-sub);
-      letter-spacing: 0.06em;
-    }
-    .footer-links {
-      margin-top: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-      text-decoration: none;
-      transition: color var(--transition);
-    }
-    .footer-links a:hover { color: var(--accent); }
-    .footer-copy {
-      font-size: 0.68rem;
-      color: var(--text-faint);
-      margin-top: 12px;
-      opacity: 0.7;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 600px) {
-      .header-inner { padding: 12px 16px; }
-      .logo { font-size: 1.2rem; }
-      .nav-toggle { display: block; }
-      nav {
-        position: fixed; top: 0; right: 0;
-        width: 260px; height: 100vh;
-        background: var(--bg);
-        flex-direction: column; align-items: flex-start;
-        padding: 72px 24px 24px; gap: 0;
-        transform: translateX(100%);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: -4px 0 24px rgba(0,0,0,0.06);
-        z-index: 105;
-      }
-      nav.open { transform: translateX(0); }
-      nav a {
-        font-size: 0.9rem; padding: 14px 8px;
-        width: 100%; border-bottom: 1px solid var(--border-light);
-        border-radius: 0;
-      }
-      .nav-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.2); z-index: 104; }
-      .nav-overlay.show { display: block; }
-
-      .article-header { padding: 32px 16px 0; }
-      .article-title { font-size: 1.25rem; }
-      .article-hero { padding: 0 16px; }
-      .toc { padding: 0 16px; }
-      .toc-box { padding: 16px 18px; }
-      .article-body { padding: 24px 16px 48px; }
-      .article-body h2 { font-size: 1.08rem; margin-top: 36px; }
-      .article-body h3 { font-size: 0.95rem; margin-top: 28px; }
-      .article-body p { font-size: 0.88rem; }
-
-      .product-card-header { padding: 16px 18px 12px; }
-      .product-card-body { padding: 16px 18px 20px; }
-      .product-name { font-size: 0.95rem; }
-      .rating-label { min-width: 52px; font-size: 0.7rem; }
-
-      .related-section { padding: 0 16px 48px; }
-      .share-bar { padding: 0 16px 36px; }
-      footer { padding: 28px 16px; }
+    /* RESPONSIVE */
+    @media(max-width:600px){
+      .header-inner{padding:14px 20px}.logo{font-size:.95rem}
+      .nav-toggle{display:block}nav{position:fixed;top:0;right:0;width:280px;height:100dvh;background:var(--ivory);flex-direction:column;align-items:flex-start;padding:80px 28px 28px;gap:0;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-8px 0 40px rgba(0,0,0,.08);z-index:205}nav.open{transform:translateX(0)}nav a{font-size:.88rem;padding:16px 4px;width:100%;border-bottom:1px solid var(--line-light);border-radius:0}
+      .nav-overlay.show{display:block}
+      .article-header{padding:36px 20px 0}.article-title{font-size:1.2rem}.article-hero{padding:0 20px}.toc{padding:0 20px}.toc-box{padding:18px 20px}
+      .article-body{padding:28px 20px 48px}.article-body h2{font-size:1.05rem;margin-top:40px}.article-body h3{font-size:.92rem;margin-top:32px}.article-body p{font-size:.86rem}
+      .product-header{padding:18px 20px 14px}.product-body{padding:18px 20px 22px}.product-name{font-size:.92rem}.rating-label{min-width:50px;font-size:.68rem}
+      .related-section{padding:0 20px 48px}.share-bar{padding:0 20px 36px}
+      footer{padding:32px 20px}.footer-inner{flex-direction:column;gap:20px;text-align:center}.footer-nav{justify-content:center;gap:18px;flex-wrap:wrap}.footer-copy{text-align:center}
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
+  <header class="header">
     <div class="header-inner">
-      <a href="/" class="logo">DIG<span>BEAUTY</span></a>
-      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()">
-        <span></span>
-      </button>
+      <a href="/" class="logo">DIGBEAUTY</a>
+      <button class="nav-toggle" aria-label="メニュー" onclick="toggleNav()"><span></span></button>
       <div class="nav-overlay" onclick="toggleNav()"></div>
-      <nav id="mainNav">
-        <a href="/">記事一覧</a>
-        <a href="/#about">DIGBEAUTYとは</a>
-        <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
-      </nav>
+      <nav id="mainNav"><a href="/">Articles</a><a href="/#philosophy">About</a><a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X</a></nav>
     </div>
   </header>
 
-  <!-- ARTICLE HEADER -->
-  <div class="article-header">
-    <p class="breadcrumb">
-      <a href="/">DIGBEAUTY</a>
-      <span class="sep">›</span>
-      <a href="/">成分辞典</a>
-    </p>
-    <span class="article-cat-tag">成分辞典</span>
+  <div class="article-header reveal">
+    <p class="breadcrumb"><a href="/">DIGBEAUTY</a><span class="sep">›</span><a href="/">成分辞典</a></p>
+    <span class="article-cat">成分辞典</span>
     <h1 class="article-title">日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤</h1>
-    <div class="article-meta">
-      <span>公開：2026.03.05</span>
-      <span>読了目安：10分</span>
-      <span>Text：DIGBEAUTY編集部</span>
-    </div>
+    <div class="article-meta"><span>2026.03.05</span><span>読了目安：10分</span><span>Text：DIGBEAUTY編集部</span></div>
   </div>
 
-  <!-- HERO IMAGE -->
-  <div class="article-hero">
-    <img src="/assets/img/hero-sunscreen-ingredients.jpg"
-         alt="日焼け止めの成分表示、読めますか？ — 紫外線吸収剤 vs 散乱剤"
-         loading="lazy" width="1200" height="675"
-         style="width:100%; border-radius:var(--radius);">
-  </div>
+  <div class="article-hero reveal reveal-d1"><div class="hero-placeholder">DIGBEAUTY — 03</div></div>
 
-  <!-- TOC -->
-  <div class="toc">
+  <div class="toc reveal reveal-d2">
     <div class="toc-box">
-      <p class="toc-title">— Contents</p>
+      <p class="toc-label">Contents</p>
       <ol class="toc-list">
         <li><a href="#uv-types">紫外線の種類 — UVA・UVB・UVCの違い</a></li>
         <li><a href="#spf-pa">SPFとPA表示の正しい読み方</a></li>
@@ -669,191 +160,75 @@
     </div>
   </div>
 
-  <!-- ARTICLE BODY -->
-  <article class="article-body">
+  <article class="article-body reveal reveal-d3">
 
     <h2 id="uv-types">紫外線の種類 — UVA・UVB・UVCの違い</h2>
-    <p>
-      日焼け止めを正しく選ぶためには、まず「何から肌を守るのか」を知る必要があります。太陽光に含まれる紫外線は波長によって<strong>UVA（315-400nm）</strong>、<strong>UVB（280-315nm）</strong>、<strong>UVC（100-280nm）</strong>の3種類に分類されます。
-    </p>
-    <p>
-      <strong>UVC</strong>はオゾン層でほぼ完全に吸収されるため、地表には届きません。日焼け止めで対策すべきなのはUVAとUVBの2つです。
-    </p>
-    <p>
-      <strong>UVB</strong>はエネルギーが強く、肌表面の表皮に作用してサンバーン（赤くなる日焼け）を引き起こします。シミの原因となるメラニン生成のトリガーにもなり、短時間でもダメージが蓄積します。ただし、ガラスや雲である程度遮断されるため、屋内にいれば影響は限定的です。
-    </p>
-    <p>
-      一方、<strong>UVA</strong>は波長が長く、真皮層まで到達します。コラーゲンやエラスチンを破壊し、シワやたるみといった「光老化」の主因となります。UVAはガラスも透過し、曇りの日でも地表に届く量はほとんど変わりません。つまり、エイジングケアの観点ではUVA対策こそが重要なのです。
-    </p>
+    <p>日焼け止めを正しく選ぶためには、まず「何から肌を守るのか」を知る必要があります。太陽光に含まれる紫外線は波長によって<strong>UVA（315-400nm）</strong>、<strong>UVB（280-315nm）</strong>、<strong>UVC（100-280nm）</strong>の3種類に分類されます。</p>
+    <p><strong>UVC</strong>はオゾン層でほぼ完全に吸収されるため、地表には届きません。日焼け止めで対策すべきなのはUVAとUVBの2つです。</p>
+    <p><strong>UVB</strong>はエネルギーが強く、肌表面の表皮に作用してサンバーン（赤くなる日焼け）を引き起こします。シミの原因となるメラニン生成のトリガーにもなり、短時間でもダメージが蓄積します。ただし、ガラスや雲である程度遮断されるため、屋内にいれば影響は限定的です。</p>
+    <p>一方、<strong>UVA</strong>は波長が長く、真皮層まで到達します。コラーゲンやエラスチンを破壊し、シワやたるみといった「光老化」の主因となります。UVAはガラスも透過し、曇りの日でも地表に届く量はほとんど変わりません。つまり、エイジングケアの観点ではUVA対策こそが重要なのです。</p>
 
-    <div class="callout">
-      <p class="callout-label">覚えておきたいポイント</p>
-      <p>UVBは「表皮のダメージ（赤み・シミ）」、UVAは「真皮のダメージ（シワ・たるみ）」。日焼け止めを選ぶ際は、両方への防御力をチェックする必要があります。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Key Point</p><p>UVBは「表皮のダメージ（赤み・シミ）」、UVAは「真皮のダメージ（シワ・たるみ）」。日焼け止めを選ぶ際は、両方への防御力をチェックする必要があります。</p></div>
 
     <h2 id="spf-pa">SPFとPA表示の正しい読み方</h2>
-    <p>
-      ドラッグストアで「SPF50+ PA++++」という表示を見て、「数値が高いほうが良い」と漠然と選んでいませんか？　SPFとPAは測定対象がそもそも異なります。
-    </p>
-    <p>
-      <strong>SPF（Sun Protection Factor）</strong>はUVBに対する防御指標です。「素肌の場合と比べて、サンバーンが起きるまでの時間を何倍に延ばせるか」を示します。たとえばSPF30なら、何も塗らない場合に比べて約30倍の時間、UVBによる赤みを防げるという意味です。ただし、これは規定量（1cm²あたり2mg）を均一に塗った場合の数値であり、実際の使用では塗りムラや量不足により効果は低下します。
-    </p>
-    <p>
-      <strong>PA（Protection Grade of UVA）</strong>はUVAに対する防御指標で、日本独自の表記です。PA+からPA++++まで4段階あり、+が多いほどUVA防御力が高いことを意味します。日常使いならPA++以上、炎天下のレジャーならPA++++が推奨されます。
-    </p>
+    <p>ドラッグストアで「SPF50+ PA++++」という表示を見て、「数値が高いほうが良い」と漠然と選んでいませんか？　SPFとPAは測定対象がそもそも異なります。</p>
+    <p><strong>SPF（Sun Protection Factor）</strong>はUVBに対する防御指標です。「素肌の場合と比べて、サンバーンが起きるまでの時間を何倍に延ばせるか」を示します。たとえばSPF30なら、何も塗らない場合に比べて約30倍の時間、UVBによる赤みを防げるという意味です。ただし、これは規定量（1cm²あたり2mg）を均一に塗った場合の数値であり、実際の使用では塗りムラや量不足により効果は低下します。</p>
+    <p><strong>PA（Protection Grade of UVA）</strong>はUVAに対する防御指標で、日本独自の表記です。PA+からPA++++まで4段階あり、+が多いほどUVA防御力が高いことを意味します。日常使いならPA++以上、炎天下のレジャーならPA++++が推奨されます。</p>
 
-    <div class="callout">
-      <p class="callout-label">数値の罠</p>
-      <p>SPF30はUVBの約96.7%を、SPF50は約98%をカットします。差はわずか1.3%。数値を上げるほど肌への負担が増す製品もあるため、日常使いではSPF30～35・PA+++程度で十分なケースが多いです。「高ければ安心」ではなく、生活シーンに合った数値を選びましょう。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Note</p><p>SPF30はUVBの約96.7%を、SPF50は約98%をカットします。差はわずか1.3%。数値を上げるほど肌への負担が増す製品もあるため、日常使いではSPF30～35・PA+++程度で十分なケースが多いです。「高ければ安心」ではなく、生活シーンに合った数値を選びましょう。</p></div>
 
     <h2 id="absorber">紫外線吸収剤とは — 仕組みとメリット・デメリット</h2>
-    <p>
-      紫外線吸収剤は、紫外線のエネルギーを化学的に吸収し、熱などの別のエネルギーに変換して放出する有機化合物です。代表的な成分には以下のようなものがあります。
-    </p>
-    <p>
-      <strong>メトキシケイヒ酸エチルヘキシル</strong>（表示名：エチルヘキシルメトキシシンナメート）は、世界で最も広く使われるUVB吸収剤です。使用感が軽く、多くの日焼け止めのベース成分になっています。<strong>オキシベンゾン-3</strong>はUVAとUVBの両方を吸収できる成分ですが、アレルギー反応のリスクやサンゴ礁への環境影響が指摘され、ハワイ州では2021年からサンゴに有害な日焼け止め成分の販売が規制されています。そのほか、<strong>ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル</strong>（UVA吸収剤）、<strong>ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン</strong>（広域UV吸収剤）なども成分表示でよく見かけます。
-    </p>
-    <p>
-      <strong>メリット</strong>としては、透明で白浮きしないこと、テクスチャーが軽くのびが良いこと、高いSPF値を実現しやすいことが挙げられます。化粧下地やトーンアップ系の日焼け止めに多く採用されるのはこのためです。
-    </p>
-    <p>
-      <strong>デメリット</strong>は、紫外線を吸収する化学反応の過程で成分自体が徐々に分解されるため、効果が時間とともに低下する点です。こまめな塗り直しが不可欠です。また、まれに接触性皮膚炎を起こす人がおり、敏感肌には合わない場合があります。
-    </p>
+    <p>紫外線吸収剤は、紫外線のエネルギーを化学的に吸収し、熱などの別のエネルギーに変換して放出する有機化合物です。代表的な成分には以下のようなものがあります。</p>
+    <p><strong>メトキシケイヒ酸エチルヘキシル</strong>（表示名：エチルヘキシルメトキシシンナメート）は、世界で最も広く使われるUVB吸収剤です。使用感が軽く、多くの日焼け止めのベース成分になっています。<strong>オキシベンゾン-3</strong>はUVAとUVBの両方を吸収できる成分ですが、アレルギー反応のリスクやサンゴ礁への環境影響が指摘され、ハワイ州では2021年からサンゴに有害な日焼け止め成分の販売が規制されています。そのほか、<strong>ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル</strong>（UVA吸収剤）、<strong>ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン</strong>（広域UV吸収剤）なども成分表示でよく見かけます。</p>
+    <p><strong>メリット</strong>としては、透明で白浮きしないこと、テクスチャーが軽くのびが良いこと、高いSPF値を実現しやすいことが挙げられます。化粧下地やトーンアップ系の日焼け止めに多く採用されるのはこのためです。</p>
+    <p><strong>デメリット</strong>は、紫外線を吸収する化学反応の過程で成分自体が徐々に分解されるため、効果が時間とともに低下する点です。こまめな塗り直しが不可欠です。また、まれに接触性皮膚炎を起こす人がおり、敏感肌には合わない場合があります。</p>
 
     <h2 id="scatterer">紫外線散乱剤とは — 仕組みとメリット・デメリット</h2>
-    <p>
-      紫外線散乱剤は、肌の表面に微粒子の膜をつくり、紫外線を物理的に反射・散乱させるアプローチです。主に使われるのは<strong>酸化亜鉛（Zinc Oxide）</strong>と<strong>酸化チタン（Titanium Dioxide）</strong>の2つです。
-    </p>
-    <p>
-      酸化亜鉛はUVAに対する防御力が高く、抗炎症作用もあるため敏感肌向け処方に重用されます。酸化チタンはUVBの散乱効率が特に高く、両者を組み合わせることでUVA・UVBの広い波長域をカバーできます。
-    </p>
-    <p>
-      <strong>メリット</strong>は、化学反応を伴わないため成分の分解がほとんど起きず、効果の持続性が高い点です。肌への刺激も少なく、敏感肌用やベビー用日焼け止めの多くが散乱剤ベースで設計されています。
-    </p>
-    <p>
-      <strong>デメリット</strong>としてよく挙がるのが「白浮き」と「きしみ」です。粒子が光を反射するため、塗った箇所が白く見えやすい。また、粉体特有のきしみ感があり、使用感では吸収剤に劣ると感じる人が多いのが実情です。近年はナノ化技術で粒子を微細化し、白浮きを軽減した製品も増えていますが、ナノ粒子の安全性についてはまだ議論が続いています。
-    </p>
+    <p>紫外線散乱剤は、肌の表面に微粒子の膜をつくり、紫外線を物理的に反射・散乱させるアプローチです。主に使われるのは<strong>酸化亜鉛（Zinc Oxide）</strong>と<strong>酸化チタン（Titanium Dioxide）</strong>の2つです。</p>
+    <p>酸化亜鉛はUVAに対する防御力が高く、抗炎症作用もあるため敏感肌向け処方に重用されます。酸化チタンはUVBの散乱効率が特に高く、両者を組み合わせることでUVA・UVBの広い波長域をカバーできます。</p>
+    <p><strong>メリット</strong>は、化学反応を伴わないため成分の分解がほとんど起きず、効果の持続性が高い点です。肌への刺激も少なく、敏感肌用やベビー用日焼け止めの多くが散乱剤ベースで設計されています。</p>
+    <p><strong>デメリット</strong>としてよく挙がるのが「白浮き」と「きしみ」です。粒子が光を反射するため、塗った箇所が白く見えやすい。また、粉体特有のきしみ感があり、使用感では吸収剤に劣ると感じる人が多いのが実情です。近年はナノ化技術で粒子を微細化し、白浮きを軽減した製品も増えていますが、ナノ粒子の安全性についてはまだ議論が続いています。</p>
 
-    <div class="callout">
-      <p class="callout-label">酸化亜鉛と金属アレルギー</p>
-      <p>まれに酸化亜鉛で肌荒れを起こす方がいます。金属アレルギーの自覚がある場合は、酸化チタンのみ使用の製品を選ぶか、パッチテストをしてから使い始めましょう。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Note</p><p>まれに酸化亜鉛で肌荒れを起こす方がいます。金属アレルギーの自覚がある場合は、酸化チタンのみ使用の製品を選ぶか、パッチテストをしてから使い始めましょう。</p></div>
 
     <h2 id="hybrid">ハイブリッド処方という選択肢</h2>
-    <p>
-      近年のトレンドは、吸収剤と散乱剤を組み合わせた<strong>ハイブリッド処方</strong>です。吸収剤の「使用感の良さ・高SPF」と、散乱剤の「低刺激・持続性」を両立させることを目指した設計です。
-    </p>
-    <p>
-      たとえば、ベースに酸化亜鉛と酸化チタンを配合しつつ、吸収剤を少量加えてSPF50+を実現する製品や、吸収剤をカプセルに包み込んで肌への直接接触を減らす「カプセルインUV」技術を採用した製品もあります。アネッサやアリィーといった国内の人気ブランドの多くがハイブリッド処方を採用しています。
-    </p>
-    <p>
-      ハイブリッド処方の利点は、単独処方よりも各成分の配合量を抑えられるため、肌負担と使用感のバランスを取りやすいことです。ただし「ハイブリッド＝万能」ではなく、どの成分がどの程度配合されているかを成分表示で確認することが大切です。
-    </p>
+    <p>近年のトレンドは、吸収剤と散乱剤を組み合わせた<strong>ハイブリッド処方</strong>です。吸収剤の「使用感の良さ・高SPF」と、散乱剤の「低刺激・持続性」を両立させることを目指した設計です。</p>
+    <p>たとえば、ベースに酸化亜鉛と酸化チタンを配合しつつ、吸収剤を少量加えてSPF50+を実現する製品や、吸収剤をカプセルに包み込んで肌への直接接触を減らす「カプセルインUV」技術を採用した製品もあります。アネッサやアリィーといった国内の人気ブランドの多くがハイブリッド処方を採用しています。</p>
+    <p>ハイブリッド処方の利点は、単独処方よりも各成分の配合量を抑えられるため、肌負担と使用感のバランスを取りやすいことです。ただし「ハイブリッド＝万能」ではなく、どの成分がどの程度配合されているかを成分表示で確認することが大切です。</p>
 
     <h2 id="how-to-read">成分表示の読み方 — 覚えるべき成分名</h2>
-    <p>
-      日焼け止めの成分表示を読む際、まず確認したいのは「吸収剤ベースか、散乱剤ベースか、ハイブリッドか」という処方タイプです。次の成分名を覚えておけば、パッケージの裏面から処方の方向性を読み取れます。
-    </p>
-    <p>
-      <strong>紫外線吸収剤の代表的な成分名：</strong>メトキシケイヒ酸エチルヘキシル、オキシベンゾン-3、ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル、ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン、t-ブチルメトキシジベンゾイルメタン、オクトクリレン。
-    </p>
-    <p>
-      <strong>紫外線散乱剤の代表的な成分名：</strong>酸化亜鉛、酸化チタン。この2つだけなので非常にシンプルです。
-    </p>
-    <p>
-      化粧品の全成分表示は、配合量の多い順に記載されるルールです（医薬部外品は順不同の場合あり）。成分リストの上位に酸化亜鉛・酸化チタンがあれば散乱剤メインの処方、メトキシケイヒ酸エチルヘキシルなどの吸収剤名が上位にあれば吸収剤メインの処方と判断できます。
-    </p>
+    <p>日焼け止めの成分表示を読む際、まず確認したいのは「吸収剤ベースか、散乱剤ベースか、ハイブリッドか」という処方タイプです。次の成分名を覚えておけば、パッケージの裏面から処方の方向性を読み取れます。</p>
+    <p><strong>紫外線吸収剤の代表的な成分名：</strong>メトキシケイヒ酸エチルヘキシル、オキシベンゾン-3、ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル、ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン、t-ブチルメトキシジベンゾイルメタン、オクトクリレン。</p>
+    <p><strong>紫外線散乱剤の代表的な成分名：</strong>酸化亜鉛、酸化チタン。この2つだけなので非常にシンプルです。</p>
+    <p>化粧品の全成分表示は、配合量の多い順に記載されるルールです（医薬部外品は順不同の場合あり）。成分リストの上位に酸化亜鉛・酸化チタンがあれば散乱剤メインの処方、メトキシケイヒ酸エチルヘキシルなどの吸収剤名が上位にあれば吸収剤メインの処方と判断できます。</p>
 
-    <div class="callout">
-      <p class="callout-label">実践テクニック</p>
-      <p>店頭で成分名を暗記する必要はありません。「酸化亜鉛」「酸化チタン」の2語だけ覚えておけば、散乱剤が入っているかどうかはすぐ分かります。それ以外のカタカナの長い成分名が並んでいたら、吸収剤ベースの可能性が高い、という読み方で十分です。</p>
-    </div>
+    <div class="callout"><p class="callout-label">Tip</p><p>店頭で成分名を暗記する必要はありません。「酸化亜鉛」「酸化チタン」の2語だけ覚えておけば、散乱剤が入っているかどうかはすぐ分かります。それ以外のカタカナの長い成分名が並んでいたら、吸収剤ベースの可能性が高い、という読み方で十分です。</p></div>
 
     <h2 id="summary">まとめ — 肌質別の選び方ガイド</h2>
-    <p>
-      日焼け止め選びは「SPFの数値」だけで完結しません。成分表示から処方タイプを読み取り、自分の肌質と生活スタイルに合った一本を見つけることが、長期的な肌の健康につながります。
-    </p>
+    <p>日焼け止め選びは「SPFの数値」だけで完結しません。成分表示から処方タイプを読み取り、自分の肌質と生活スタイルに合った一本を見つけることが、長期的な肌の健康につながります。</p>
 
-    <div class="callout">
-      <p class="callout-label">肌質別おすすめ処方タイプ</p>
-      <p>
-        <strong>敏感肌・乾燥肌</strong> → 散乱剤ベース（酸化亜鉛+酸化チタン）の製品が第一選択。吸収剤フリーの「ノンケミカル」表記を目印に。SPF30・PA+++程度で日常使いに十分。<br>
-        <strong>脂性肌・混合肌</strong> → ハイブリッド処方が使いやすい。吸収剤の軽い使用感で化粧崩れもしにくく、散乱剤の持続性も得られる。<br>
-        <strong>普通肌・健康な肌</strong> → 吸収剤ベースでもハイブリッドでもOK。使用感の好みで選んで問題なし。ただし2〜3時間おきの塗り直しは必須。<br>
-        <strong>アウトドア・レジャー</strong> → SPF50+・PA++++のウォータープルーフ。汗・水に強いハイブリッド処方が最適。帰宅後のクレンジングも忘れずに。
-      </p>
-    </div>
+    <div class="callout"><p class="callout-label">Skin Type Guide</p><p><strong>敏感肌・乾燥肌</strong> → 散乱剤ベース（酸化亜鉛+酸化チタン）の製品が第一選択。吸収剤フリーの「ノンケミカル」表記を目印に。SPF30・PA+++程度で日常使いに十分。<br><strong>脂性肌・混合肌</strong> → ハイブリッド処方が使いやすい。吸収剤の軽い使用感で化粧崩れもしにくく、散乱剤の持続性も得られる。<br><strong>普通肌・健康な肌</strong> → 吸収剤ベースでもハイブリッドでもOK。使用感の好みで選んで問題なし。ただし2〜3時間おきの塗り直しは必須。<br><strong>アウトドア・レジャー</strong> → SPF50+・PA++++のウォータープルーフ。汗・水に強いハイブリッド処方が最適。帰宅後のクレンジングも忘れずに。</p></div>
 
-    <p>
-      どの処方タイプを選んでも、最も大切なのは<strong>「適量を塗り、こまめに塗り直す」</strong>こと。高スペックの日焼け止めでも、塗る量が足りなければ表示通りの効果は発揮されません。顔全体でおよそパール粒2個分が目安です。
-    </p>
-    <p>
-      成分表示を読む力は、一度身につければ一生使えるスキルです。次にドラッグストアで日焼け止めを手に取ったとき、ぜひパッケージの裏面を確認してみてください。「何が入っているか」が分かるだけで、日焼け止め選びの精度は格段に上がります。
-    </p>
+    <p>どの処方タイプを選んでも、最も大切なのは<strong>「適量を塗り、こまめに塗り直す」</strong>こと。高スペックの日焼け止めでも、塗る量が足りなければ表示通りの効果は発揮されません。顔全体でおよそパール粒2個分が目安です。</p>
+    <p>成分表示を読む力は、一度身につければ一生使えるスキルです。次にドラッグストアで日焼け止めを手に取ったとき、ぜひパッケージの裏面を確認してみてください。「何が入っているか」が分かるだけで、日焼け止め選びの精度は格段に上がります。</p>
   </article>
 
-  <!-- SHARE -->
-  <div class="share-bar">
-    <p>この記事をシェアする</p>
-    <div class="share-buttons">
-      <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://beauty.plucksworld.com/articles/sunscreen-ingredients.html&text=%E6%97%A5%E7%84%BC%E3%81%91%E6%AD%A2%E3%82%81%E3%81%AE%E6%88%90%E5%88%86%E8%A1%A8%E7%A4%BA%E3%80%81%E8%AA%AD%E3%82%81%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F%20%E7%B4%AB%E5%A4%96%E7%B7%9A%E5%90%B8%E5%8F%8E%E5%89%A4%20vs%20%E6%95%A3%E4%B9%B1%E5%89%A4%20%7C%20DIGBEAUTY&utm_source=twitter&utm_medium=social&utm_campaign=launch&utm_content=03_sunscreen" target="_blank" rel="noopener">Xでシェア</a>
-      <a class="share-btn" href="#" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>{this.textContent='URLをコピー'},2000);return false;">URLをコピー</a>
-    </div>
-  </div>
+  <div class="share-bar"><p>この記事をシェアする</p><div class="share-buttons"><a class="share-btn" href="https://twitter.com/intent/tweet?url=https://digbeauty.plucksworld.com/articles/sunscreen-ingredients.html&text=%E6%97%A5%E7%84%BC%E3%81%91%E6%AD%A2%E3%82%81%E3%81%AE%E6%88%90%E5%88%86%E8%A1%A8%E7%A4%BA%E3%80%81%E8%AA%AD%E3%82%81%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F%20%E7%B4%AB%E5%A4%96%E7%B7%9A%E5%90%B8%E5%8F%8E%E5%89%A4%20vs%20%E6%95%A3%E4%B9%B1%E5%89%A4%20%7C%20DIGBEAUTY&utm_source=twitter&utm_medium=social&utm_campaign=launch&utm_content=03_sunscreen" target="_blank" rel="noopener">Xでシェア</a><a class="share-btn" href="#" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>{this.textContent='URLをコピー'},2000);return false;">URLをコピー</a></div></div>
 
-  <!-- RELATED -->
   <section class="related-section">
-    <p class="section-label">— Related Articles</p>
+    <p class="related-label">Related Articles</p>
     <div class="related-list">
-      <a class="related-link" href="/articles/moisturizer-under-1000yen.html">
-        <span class="related-num">01</span>
-        <div class="related-info">
-          <span class="related-cat">発掘レビュー</span>
-          <p class="related-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</p>
-        </div>
-      </a>
-      <a class="related-link" href="/articles/retinol-guide.html">
-        <span class="related-num">02</span>
-        <div class="related-info">
-          <span class="related-cat">成分辞典</span>
-          <p class="related-title">レチノール入門 — 濃度・種類・選び方を論文ベースで完全解説</p>
-        </div>
-      </a>
-      <a class="related-link" href="/articles/mens-skincare-beginner.html">
-        <span class="related-num">04</span>
-        <div class="related-info">
-          <span class="related-cat">メンズ美容</span>
-          <p class="related-title">メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ</p>
-        </div>
-      </a>
+      <a class="related-link" href="/articles/moisturizer-under-1000yen.html"><span class="related-num">01</span><div><span class="related-cat">発掘レビュー</span><p class="related-title">1000円以下で見つけた最強保湿化粧水5選 — 成分で選ぶプチプラ名品</p></div></a>
+      <a class="related-link" href="/articles/retinol-guide.html"><span class="related-num">02</span><div><span class="related-cat">成分辞典</span><p class="related-title">レチノール入門 — 濃度・種類・選び方を論文ベースで完全解説</p></div></a>
+      <a class="related-link" href="/articles/mens-skincare-beginner.html"><span class="related-num">04</span><div><span class="related-cat">メンズ美容</span><p class="related-title">メンズスキンケア完全入門 — 洗顔・化粧水・日焼け止めの3ステップ</p></div></a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-brand">DIGBEAUTY — 美を、掘り当てろ。</div>
-    <div class="footer-links">
-      <a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a>
-      <a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a>
-      <a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a>
-      <a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X / Twitter</a>
-    </div>
-    <p class="footer-copy">© 2026 plucks world</p>
+    <div class="footer-inner"><div class="footer-logo">DIGBEAUTY</div><nav class="footer-nav"><a href="https://plucksworld.com" target="_blank" rel="noopener">plucks world</a><a href="https://digwax.plucksworld.com" target="_blank" rel="noopener">DIGWAX RECORDS</a><a href="https://digquest.plucksworld.com" target="_blank" rel="noopener">DIGQUEST GAMES</a><a href="https://twitter.com/digbeauty" target="_blank" rel="noopener">X</a></nav></div>
+    <p class="footer-copy">&copy; 2026 plucks world</p>
   </footer>
 
-  <script>
-    function toggleNav() {
-      document.getElementById('mainNav').classList.toggle('open');
-      document.querySelector('.nav-toggle').classList.toggle('active');
-      document.querySelector('.nav-overlay').classList.toggle('show');
-    }
-    document.querySelectorAll('#mainNav a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        if (window.innerWidth <= 600) toggleNav();
-      });
-    });
-  </script>
-
+  <script>function toggleNav(){document.getElementById('mainNav').classList.toggle('open');document.querySelector('.nav-toggle').classList.toggle('active');document.querySelector('.nav-overlay').classList.toggle('show')}document.querySelectorAll('#mainNav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=600)toggleNav()}))</script>
 </body>
 </html>
